@@ -1,0 +1,17 @@
+
+
+
+/* 弹性布局 */
+.flex{
+    display: flex;
+}
+.flex-jcsb{
+    justify-content: space-between;
+}
+.flex-aic{
+    align-items: center;
+}
+/* 主题颜色 */
+.themecolors{
+    color: #4282F4; 
+}
