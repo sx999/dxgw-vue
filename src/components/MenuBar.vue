@@ -1,8 +1,14 @@
 <template>
     <!-- 导航 -->
-    <div class="header-home">   
-            <div class="logo-left-img">
-                <img :src="ListData.sysLogo" alt="Logo" @click="refresh()">
+    <div class="header-home"> 
+            <div class="logo flex flex-aic">
+                <div class="logo-left-img">
+                     <img :src="ListData.sysLogo" alt="Logo" @click="refresh()">
+                </div>
+                <div class="logo-text themecolors ">
+                    <p class="p1 basic-font">独秀科技</p>
+                    <p class="p2">DU XIU KE JI</p>   
+                </div>
             </div>
         <el-menu 
         :default-active="'/' +this.$route.path.split('/')[1]"
@@ -41,7 +47,7 @@ export default {
           Queryall(){
             this.axios.post(this.$api_router.system+'findAll')
             .then(res=>{
-                console.log(res)
+                console.log("配置信息",res)
                 if(res.data.code == 200){
                         this.ListData = res.data.data[0]
                 }else{
@@ -62,7 +68,23 @@ export default {
         height: 100%;
         margin:0 auto;
     }
-   
+    /* 头部左侧logo */
+
+    /* .logo {
+        align-items: center;
+    } */
+    .logo .logo-text{
+        margin-left: 26px;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo .logo-text  .p1{
+        letter-spacing: 3px;
+    }
+    .logo .logo-text  .p2{
+        margin-top: 2px;
+        font-size: 12px;
+    }
     .logo-left-img{
         width: 35px;
         height: 63px;

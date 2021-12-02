@@ -15,3 +15,36 @@
 .themecolors{
     color: #4282F4; 
 }
+/* 字体 */
+.basic-font{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* home 页面标题全局样式 */
+.module-box{
+    width: 1024px;
+    margin: auto;
+    margin-top: 80px;
+}
+.module-box .title{
+    margin-bottom: 50px;
+}
+.module-box .title .m-title{
+    justify-content: center;
+     font-weight: bold;
+}
+.module-box .title .m-title p{
+    font-size: 30px;
+    height: 42px;
+    line-height: 42px;
+    color: #333333;
+    margin: 0 10px;
+}
+.module-box .title .m-title span{
+    font-size: 16px;
+    color: #777777; 
+ }
+.module-box .title .m-title .rotate{
+    transform: rotate(180deg);
+}

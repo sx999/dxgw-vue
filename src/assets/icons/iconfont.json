@@ -13,11 +13,60 @@
       "unicode_decimal": 59245
     },
     {
+      "icon_id": "1470964",
+      "name": "灯",
+      "font_class": "deng",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
       "icon_id": "7708058",
       "name": "右箭头02",
       "font_class": "youjiantou",
       "unicode": "e622",
       "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "10314539",
+      "name": "教室",
+      "font_class": "jiaoshi",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "14348495",
+      "name": "图书馆",
+      "font_class": "tushuguan",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "15629923",
+      "name": "门禁",
+      "font_class": "menjin",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "17654821",
+      "name": "录像",
+      "font_class": "luxiang",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "18166528",
+      "name": "衣服,服装",
+      "font_class": "clothes",
+      "unicode": "e8c7",
+      "unicode_decimal": 59591
+    },
+    {
+      "icon_id": "23165000",
+      "name": "班级上课",
+      "font_class": "banjishangke",
+      "unicode": "e627",
+      "unicode_decimal": 58919
     }
   ]
 }

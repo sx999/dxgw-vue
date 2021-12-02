@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1638260459984') format('truetype');
+  src: url('iconfont.ttf?t=1638333455802') format('truetype');
 }
 
 .iconfont {
@@ -15,7 +15,35 @@
   content: "\e76d";
 }
 
+.icon-deng:before {
+  content: "\e66d";
+}
+
 .icon-youjiantou:before {
   content: "\e622";
+}
+
+.icon-jiaoshi:before {
+  content: "\e62d";
+}
+
+.icon-tushuguan:before {
+  content: "\e69b";
+}
+
+.icon-menjin:before {
+  content: "\e6a5";
+}
+
+.icon-luxiang:before {
+  content: "\e636";
+}
+
+.icon-clothes:before {
+  content: "\e8c7";
+}
+
+.icon-banjishangke:before {
+  content: "\e627";
 }
 
