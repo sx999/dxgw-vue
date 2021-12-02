@@ -15,9 +15,9 @@
     position:absolute;
     left: 0;
     right: 0;
-    bottom: -98px;
+    bottom: 0;
     width: 100%;
-    height: 98px;
+    height: 0px;
     font-size: 20px;
     font-weight: bold;
     color: #FFFFFF;
@@ -40,7 +40,8 @@
 }
 .Module1-left:hover .block{
     opacity: 1;
-    transform: translateY(-98px);
+    height: 98px;
+    /* transform: translateY(-98px); */
 }
 .Module1-right{
     width: 504px;

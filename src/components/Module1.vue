@@ -61,7 +61,7 @@ export default {
         Queryall(){
             this.axios.post(this.$api_router.industry+'findAll')
             .then(res=>{
-                console.log(res)
+                console.log("资讯",res)
                 if(res.data.code == 200){
                         this.ListData = res.data.data
                         this.Dateformatting()  
