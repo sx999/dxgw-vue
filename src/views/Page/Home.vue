@@ -8,6 +8,7 @@
             <Module1></Module1>
             <Module2></Module2>
             <Module3></Module3>
+            <Module4></Module4>
         </div>
     </div>
 </template>
@@ -16,13 +17,14 @@ import Banner from '@/components/Banner.vue'
 import Module1 from '@/components/Module1.vue'
 import Module2 from '@/components/Module2.vue'
 import Module3 from '@/components/Module3.vue'
+import Module4 from '@/components/Module4.vue'
 export default {
     data(){
         return{
 
         }
     },
-    components:{Banner,Module1,Module2,Module3},
+    components:{Banner,Module1,Module2,Module3,Module4},
     created(){},
     mounted(){
 

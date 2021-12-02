@@ -15,6 +15,9 @@ Vue.prototype.moment = Moment
 import axios from 'axios'
 Vue.prototype.axios = axios;    //全局注册，
 
+//字体
+import './assets/css/fontCss.css';
+
 import 'element-ui/lib/theme-chalk/base.css';
 // collapse 展开折叠
 import CollapseTransition from 'element-ui/lib/transitions/collapse-transition';

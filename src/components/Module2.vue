@@ -126,7 +126,7 @@ export default {
             //禁止事件默认行为（此处禁止鼠标滚轮行为关联到"屏幕滚动条上下移动"行为）  
             event.preventDefault();  
             //设置鼠标滚轮滚动时屏幕滚动条的移动步长  
-            var step = 50;  
+            var step = 270;  
             if(event.deltaY < 0){  
                 //向上滚动鼠标滚轮，屏幕滚动条左移  
                 this.scrollLeft -= step;  

@@ -103,7 +103,7 @@
     margin-left: 10px;
     float: left;
     background-color: rgba(66, 130, 244, 0.4);
-    transform: skewX(-45deg);
+    transform: skewX(-32deg);
     transition: width .5s;
 }  
  .back{
