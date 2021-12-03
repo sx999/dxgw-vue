@@ -10,7 +10,7 @@
         </el-main>
         <!-- 底部/页脚 -->
         <el-footer id="fotter">
-            <Footer ></Footer>
+            <Footer></Footer>
         </el-footer>
         <!-- 回顶start  -->
         <div class="scollTop" id="imgscoll" v-show="isShowimg"  @click="goTop">

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1638333455802') format('truetype');
+  src: url('iconfont.ttf?t=1638512197145') format('truetype');
 }
 
 .iconfont {
@@ -19,12 +19,24 @@
   content: "\e66d";
 }
 
+.icon-dianhua:before {
+  content: "\e88b";
+}
+
+.icon-youjian:before {
+  content: "\e604";
+}
+
+.icon-dizhi:before {
+  content: "\e62d";
+}
+
 .icon-youjiantou:before {
   content: "\e622";
 }
 
 .icon-jiaoshi:before {
-  content: "\e62d";
+  content: "\e62e";
 }
 
 .icon-tushuguan:before {

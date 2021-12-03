@@ -1,5 +1,5 @@
 <template>
-    <!-- 首页-解决方案 -->
+    <!-- 首页-功能介绍 -->
     <div class="module-box">
         <div class="title">
             <div class="m-title flex flex-aic">

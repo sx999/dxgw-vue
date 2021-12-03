@@ -15,7 +15,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Index',
+    // name: 'Index',
     component: Index,
     children: [
       {path:"",redirect:"/home"},

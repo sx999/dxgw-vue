@@ -20,6 +20,27 @@
       "unicode_decimal": 58989
     },
     {
+      "icon_id": "2076254",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e88b",
+      "unicode_decimal": 59531
+    },
+    {
+      "icon_id": "4198413",
+      "name": "邮件",
+      "font_class": "youjian",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "5881143",
+      "name": "地址",
+      "font_class": "dizhi",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
       "icon_id": "7708058",
       "name": "右箭头02",
       "font_class": "youjiantou",
@@ -30,8 +51,8 @@
       "icon_id": "10314539",
       "name": "教室",
       "font_class": "jiaoshi",
-      "unicode": "e62d",
-      "unicode_decimal": 58925
+      "unicode": "e62e",
+      "unicode_decimal": 58926
     },
     {
       "icon_id": "14348495",

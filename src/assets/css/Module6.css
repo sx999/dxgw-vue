@@ -1,0 +1,76 @@
+.Module6{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Module6 .div2{
+    width: 296px;
+    height: 320px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333 ;
+    cursor: pointer;
+  
+    text-align: center;
+}
+.Module6 .div2 .front,
+.Module6 .div2 .back{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: ease-in-out 600ms;
+} 
+.Module6 .div2 .front{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+.Module6 .div2 .front .ico-img span{
+    font-size: 52px;
+    font-weight: 500;
+}
+.Module6 .div2 .front .address{
+    padding:0 30px;
+}
+.Module6 .div2 .back{
+    position: relative;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+    background-repeat: no-repeat;
+}
+.Module6 .div2 .front div:nth-child(1){
+    margin-top: 80px;
+}
+.Module6 .div2 .front div:nth-child(2){
+    margin-top:47px;
+   
+}
+.Module6 .div2 .front div:nth-child(3){
+    margin-top: 23px;
+}
+.Module6 .div2:hover{
+    color: #498BFF;
+}
+.Module6 .div2:hover .front{
+    transform: rotateY(180deg);
+}
+.Module6 .div2:nth-child(even):hover .front{
+    transform: rotateY(-180deg);
+} 
+.Module6 .div2:hover .back {
+    transform: rotateY(0deg);
+}
+.Module6 .div2:nth-child(even) .back {
+    transform: rotateY(180deg);
+}
+.Module6 .div2:nth-child(even):hover .back {
+    transform: rotateY(0deg);
+}

@@ -93,8 +93,10 @@ export default {
     .banner-img .text .p1{
         margin-top: 10px;
         font-size: 36px;
+        letter-spacing:7px;
     }
     .banner-img .text .p2{
+        color: #1AE7E3;
         margin-top: 20px;
         font-size: 24px;
         letter-spacing: 3px;
@@ -105,17 +107,21 @@ export default {
         height: 60px;
         line-height: 60px;
         text-align: center;
-        background-color: #4282F4;
+        /* background-color: #1AE7E3; */
         font-size: 18px;
         letter-spacing: 2px;
-        font-weight: 800;
+        font-weight: 700;
         border-radius: 1px;
         opacity: 1;
         cursor: pointer;
-    }
-    .banner-img .text .button:hover{
+        /* color: #158eff; */
         color: rgba(255, 255, 255, 0.8);
         background-color: rgba(66,130,244,0.8);
+    }
+    .banner-img .text .button:hover{
+        opacity: 0.9;
+        /* color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(66,130,244,0.8); */
     }
     .pic-img img{
         height: 600px;

@@ -75,6 +75,7 @@ export default {
     } */
     .logo .logo-text{
         margin-left: 26px;
+        color: #518DF5;
         display: flex;
         flex-direction: column;
     }
@@ -94,7 +95,10 @@ export default {
         height: 100%;
         cursor:pointer;
     }
-
+    .el-menu-item{
+        font-size: 16px;
+        font-weight: 500;
+    }
      /* element-nav css修改 start*/
     .el-menu.el-menu--horizontal{
         font-size: 16px !important;

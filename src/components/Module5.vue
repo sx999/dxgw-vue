@@ -12,10 +12,13 @@
             </div>
         </div>
         <div class="Module5">
-            <div class="list flex">
-                <img src="" alt="">
-                <p>保障学生安全</p>
-                <span>人脸识别、智能校服加强进出安全</span>
+           
+            <div class="list flex" v-for="(item,index) in listdata" :key="index">
+                <div class="one">
+                </div>
+                <img :src="item.advantagePic" alt="">
+                <p>{{item.advantageHeadline}}</p>
+                <span>{{item.advantageDetails}}</span>
             </div>
         </div>
     </div>
@@ -24,9 +27,7 @@
 export default {
     data(){
         return{
-            listdata:[
-                
-            ]
+            listdata:[]
         }
     },
     created(){
@@ -43,9 +44,9 @@ export default {
         Queryall(){
             this.axios.post(this.$api_router.product+'findAll')
             .then(res=>{
-                // console.log(res)
+                console.log("产品优势",res)
                 if(res.data.code == 200){
-                        this.tableData = res.data.data
+                        this.listdata = res.data.data
                 }else{
 
                     return false
