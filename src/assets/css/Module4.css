@@ -1,0 +1,52 @@
+.Module4{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Module4 .list{
+    margin-top: 66px;
+    margin-left: 28px;
+    width: 31.2%;
+    
+    /* justify-content: space-between; */
+}
+.Module4 .list:nth-child(1),
+.Module4 .list:nth-child(2),
+.Module4 .list:nth-child(3){
+    margin-top: 20px;
+}
+.Module4 .list:nth-child(1),
+.Module4 .list:nth-child(4),
+.Module4 .list:nth-child(7),
+.Module4 .list:nth-child(10){
+    margin-left: 0px;
+}
+.Module4 .list .div-radius{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    /* text-align: center;
+    line-height: 60px; */
+    border-radius: 50%;
+    background-color: #1A1E5C;
+    cursor: pointer;
+}
+.Module4 .list .div-radius .div-img{
+    width: 34px;
+    height: 34px;
+}
+.Module4 .list .text{
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    color: #333333;
+    margin-left: 20px;
+}
+.Module4 .list .text .p2{
+    font-size: 14px;
+    color: #777777;
+}
+
+

@@ -9,6 +9,8 @@
             <Module2></Module2>
             <Module3></Module3>
             <Module4></Module4>
+            <Module5></Module5>
+            <Module6></Module6>
         </div>
     </div>
 </template>
@@ -18,13 +20,15 @@ import Module1 from '@/components/Module1.vue'
 import Module2 from '@/components/Module2.vue'
 import Module3 from '@/components/Module3.vue'
 import Module4 from '@/components/Module4.vue'
+import Module5 from '@/components/Module5.vue'
+import Module6 from '@/components/Module6.vue'
 export default {
     data(){
         return{
 
         }
     },
-    components:{Banner,Module1,Module2,Module3,Module4},
+    components:{Banner,Module1,Module2,Module3,Module4,Module5,Module6},
     created(){},
     mounted(){
 

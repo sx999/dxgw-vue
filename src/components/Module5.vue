@@ -1,25 +1,21 @@
 <template>
-    <!-- 首页-解决方案 -->
+    <!-- 首页-产品优势 -->
     <div class="module-box">
         <div class="title">
             <div class="m-title flex flex-aic">
                 <img class="m-title-img" src="../assets/images/group.png" alt="">
-                <p>功能介绍</p> 
+                <p>产品优势</p> 
                 <img class="m-title-img rotate" src="../assets/images/group.png" alt="">
             </div>
             <div class="m-title flex flex-aic">
                 <span>AFeatures</span> 
             </div>
         </div>
-        <div class="Module4 flex">
-            <div class="list flex" v-for="(item,index) in listData" :key="index">
-                <div class="div-radius">
-                    <img class="div-img" :src="item.featurePic" alt="">
-                </div>
-                <div class="text flex">
-                    <p>{{item.featureHeadline}}</p>
-                    <p class="p2">{{item.featureDetails}}</p>
-                </div>
+        <div class="Module5">
+            <div class="list flex">
+                <img src="" alt="">
+                <p>保障学生安全</p>
+                <span>人脸识别、智能校服加强进出安全</span>
             </div>
         </div>
     </div>
@@ -28,25 +24,30 @@
 export default {
     data(){
         return{
-            listData:[]
+            listdata:[
+                
+            ]
         }
     },
     created(){
 
     },
-    mounted(){this.Queryall()},
-    computed:{},
+    mounted(){
+        this.Queryall()
+    },
+    computed:{
+
+    },
     methods:{
          // 查询全部
         Queryall(){
-            this.loading = true
-            this.axios.post(this.$api_router.function+'findAll')
+            this.axios.post(this.$api_router.product+'findAll')
             .then(res=>{
-                console.log("功能介绍",res)
+                // console.log(res)
                 if(res.data.code == 200){
-                        this.listData = res.data.data
+                        this.tableData = res.data.data
                 }else{
-                  
+
                     return false
                 }
             })     
@@ -55,5 +56,5 @@ export default {
 }
 </script>
 <style scoped>
-   @import "../assets/css/Module4.css";
+   @import "../assets/css/Module5.css";
 </style>

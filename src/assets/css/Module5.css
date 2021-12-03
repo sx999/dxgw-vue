@@ -1,0 +1,22 @@
+.Module5{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Module5 .list{
+    padding:0 40px;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bold;
+}
+.Module5 .list img{
+    width: 100%;
+}
+.Module5 .list p{
+    font-size: 20px;
+    color: #333333;
+}
+.Module5 .list span{
+    font-size: 16px;
+    color: #777777;
+}
