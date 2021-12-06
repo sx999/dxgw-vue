@@ -20,7 +20,26 @@
         >
             <el-menu-item index="/home"><p>首页</p> </el-menu-item>
             <el-menu-item index="/industry">行业资讯</el-menu-item>
-            <el-menu-item index="/solution">解决方案</el-menu-item>
+            <el-submenu index="/solution" style="width: 125px">
+                   <template slot="title" class="titlefont">解决方案</template>
+                   <ul class="pull-down">
+                       <li>门禁系统</li>
+                       <li>智能校服</li>
+                       <li>智慧教室</li>
+                       <li>录播教室</li>
+                       <li>互动课堂</li>
+                       <li>智慧照明</li>
+                       <li>智慧图书馆</li>
+                   </ul>
+                    <!-- <el-menu-item  class="smalldiv" index="/"><p class="smallp">门禁系统</p> </el-menu-item>
+                    <el-menu-item class="smalldiv" index="/">智能校服</el-menu-item>
+                    <el-menu-item class="smalldiv" index="/">智慧教室</el-menu-item>
+                    <el-menu-item class="smalldiv" index="/">录播教室</el-menu-item>
+                    <el-menu-item class="smalldiv" index="/">互动课堂</el-menu-item>
+                    <el-menu-item class="smalldiv" index="/">智慧照明</el-menu-item>
+                    <el-menu-item class="smalldiv" index="/">智慧图书馆</el-menu-item> -->
+            </el-submenu>
+        
             <el-menu-item index="/agency">代理加盟</el-menu-item>
             <el-menu-item index="/contact">APP下载</el-menu-item>
             <el-menu-item index="/album">宣传画册</el-menu-item>
@@ -59,7 +78,7 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style>
     .header-home{
         display: flex;
         justify-content: space-between;
@@ -96,8 +115,11 @@ export default {
         cursor:pointer;
     }
     .el-menu-item{
-        font-size: 16px;
+        font-size: 16px !important;
         font-weight: 500;
+    }
+    .el-menu--horizontal>.el-submenu .el-submenu__title{
+        font-size: 16px !important;
     }
      /* element-nav css修改 start*/
     .el-menu.el-menu--horizontal{
@@ -111,10 +133,29 @@ export default {
         color: #4282F4  !important;
         border-bottom: 3px solid #4282F4  !important;
     }
-    .el-menu .el-submenu__title:hover{
+    /* .el-menu .el-submenu__title:hover{
         background: #4282F4 !important;
-    }
+    } */
      /* element-nav css修改 end*/
 
-    
+    .smallp{
+        font-size: 16px;
+    }
+    .smalldiv{
+        width: 100px !important;
+    }
+    .pull-down {
+        width: 100px;
+        cursor: pointer;
+    }
+    .pull-down li{
+        padding: 0 20px;
+        width: 100px !important;
+        height: 38px;
+        text-align: left;
+        line-height: 38px;
+    }
+    .pull-down li:hover{
+        background-color:rgba(200,200,200,0.5) ;
+    }
 </style>

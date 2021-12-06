@@ -48,5 +48,6 @@ export default {
     }
     .Home-box .content{
         width: 100%;
+        overflow-x: hidden;
     }
 </style>

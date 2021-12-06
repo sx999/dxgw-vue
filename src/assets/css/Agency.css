@@ -1,0 +1,129 @@
+.Agency-box{
+    width: 100%;
+    background-color:#FFFFFF;
+    overflow-x: hidden;
+}
+.Agency-box .banner{
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+.Agency-box .banner img{
+    width: 100%; 
+    height: 100%;
+}
+.Agency-box .banner p{
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;  
+    right: 0;
+    margin:auto;
+    width: 300px;
+    height: 62px;
+    font-size: 48px;
+    text-align: center;
+    font-family: YouSheBiaoTiHei-Regular, YouSheBiaoTiHei;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+}
+.Agency-box .box{
+    width: 100%;
+    background: rgba(80, 142, 252, 0.04);
+}
+.Agency-box .center1{
+    margin-bottom: 40px;
+}
+.Agency-box .center1 .list{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Agency-box .center1 .list li{
+    margin-left:32px;
+    margin-bottom: 20px;
+    width: 320px;
+    height: 204px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-family: PingFang SC-Bold, PingFang SC;
+    font-weight: bold;
+     color: #333333;
+    background: rgba(235, 242, 255, 0.6);
+    border-radius: 4px 4px 4px 4px;
+    transition: all .7s;
+    cursor: default;
+}
+.Agency-box .center1 .list li:nth-child(1),
+.Agency-box .center1 .list li:nth-child(4),
+.Agency-box .center1 .list li:nth-child(7){
+    margin-left: 0;
+}
+.span-icon{
+    margin-top:20px;
+    font-size: 60px;
+    font-weight: 500;
+    color: #4282F4;
+}
+.Agency-box .center1 .list li .p1{
+    margin-bottom: 0px;
+}
+.Agency-box .center1 .list li .p2{
+    margin-bottom: 35px;
+    color: #777777;
+    font-weight: 500;
+}
+.Agency-box .center1 .list li:hover{
+    background-color: #4282F4;
+    color: #FFFFFF;
+}
+.Agency-box .center1 .list li:hover .span-icon{
+    color: #FFFFFF;
+}
+.Agency-box .center1 .list li:hover .p2{
+    color: #FFFFFF;
+}
+.Agency-box .center2 .form{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Agency-box .center2 .form .input1{
+    margin-bottom: 38px;
+    width: 490px;
+    height: 52px;
+    align-items: center;
+    background: rgba(237, 243, 252, 0.4);
+    border-radius: 2px 2px 2px 2px;
+}
+.Agency-box .center2 .form .input1 .span{
+    margin-left: 10px;
+    font-size: 30px;
+    color: #4282F4;
+}
+.Agency-box .center2 .form .input1 input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    text-indent: 16px;
+    outline: none;
+    background: rgba(237, 243, 252, 0.4);
+    border-radius: 2px 2px 2px 2px;
+}
+.Agency-box .center2 .button{
+    margin:auto;
+    margin-top: 36px;
+    margin-bottom: 130px;
+    width: 220px;
+    height: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 50px;
+    text-align: center;
+    background: #4282F4;
+    box-shadow: 0px 4px 5px 1px rgba(66, 131, 244, 0.20000000298023224);
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+}
+

@@ -34,11 +34,25 @@
       "unicode_decimal": 58884
     },
     {
+      "icon_id": "4670121",
+      "name": "教育",
+      "font_class": "jiaoyu",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
       "icon_id": "5881143",
       "name": "地址",
       "font_class": "dizhi",
       "unicode": "e62d",
       "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "6547444",
+      "name": "人事业务",
+      "font_class": "renshiyewu",
+      "unicode": "e6d2",
+      "unicode_decimal": 59090
     },
     {
       "icon_id": "7708058",
@@ -48,11 +62,46 @@
       "unicode_decimal": 58914
     },
     {
+      "icon_id": "8014978",
+      "name": "法律法规",
+      "font_class": "tubiaozhizuomoban-",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "8526867",
+      "name": "事务中心_进修培训",
+      "font_class": "shiwuzhongxin_jinxiupeixun",
+      "unicode": "e6f4",
+      "unicode_decimal": 59124
+    },
+    {
+      "icon_id": "9058290",
+      "name": "7_1市场营销",
+      "font_class": "_shichangyingxiao",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "10056263",
+      "name": "财务",
+      "font_class": "caiwu",
+      "unicode": "e70e",
+      "unicode_decimal": 59150
+    },
+    {
       "icon_id": "10314539",
       "name": "教室",
       "font_class": "jiaoshi",
       "unicode": "e62e",
       "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "12439758",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e648",
+      "unicode_decimal": 58952
     },
     {
       "icon_id": "14348495",
@@ -81,6 +130,27 @@
       "font_class": "clothes",
       "unicode": "e8c7",
       "unicode_decimal": 59591
+    },
+    {
+      "icon_id": "18858933",
+      "name": "供应链",
+      "font_class": "weibiaoti-4",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "19457209",
+      "name": "name",
+      "font_class": "xingming",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "21432644",
+      "name": "农民合作社",
+      "font_class": "men",
+      "unicode": "e605",
+      "unicode_decimal": 58885
     },
     {
       "icon_id": "23165000",
