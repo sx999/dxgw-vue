@@ -44,7 +44,7 @@ export default {
         Queryall(){
             this.axios.post(this.$api_router.product+'findAll')
             .then(res=>{
-                console.log("产品优势",res)
+               // console.log("产品优势",res)
                 if(res.data.code == 200){
                         this.listdata = res.data.data
                 }else{

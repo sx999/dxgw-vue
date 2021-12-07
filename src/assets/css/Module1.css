@@ -54,6 +54,7 @@
     width: 100%;
     height: 158px;
     justify-content: space-between;
+    cursor: pointer;
 }
 .Module1-right .list:hover .hover-color,
 .Module1-right .list:hover .list-text .look{

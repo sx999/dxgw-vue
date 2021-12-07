@@ -23,13 +23,7 @@
             <el-submenu index="/solution" style="width: 125px">
                    <template slot="title" class="titlefont">解决方案</template>
                    <ul class="pull-down">
-                       <li>门禁系统</li>
-                       <li>智能校服</li>
-                       <li>智慧教室</li>
-                       <li>录播教室</li>
-                       <li>互动课堂</li>
-                       <li>智慧照明</li>
-                       <li>智慧图书馆</li>
+                       <li v-for="(item,index) in BarData" :key="index" @click="ToDetail(item.menuId)">{{item.menuName}}</li>
                    </ul>
                     <!-- <el-menu-item  class="smalldiv" index="/"><p class="smallp">门禁系统</p> </el-menu-item>
                     <el-menu-item class="smalldiv" index="/">智能校服</el-menu-item>
@@ -51,22 +45,24 @@
 export default {
     data(){ 
         return{
-            ListData:[]
+            ListData:[],
+            BarData:[]
         }
     },
     created(){},
     mounted(){
-      this.Queryall()
+      this.Queryall(),
+      this.Queryall1()
    },
     computed:{
 
     },
     methods:{
-         //调用
-          Queryall(){
+        //调用
+        Queryall(){
             this.axios.post(this.$api_router.system+'findAll')
             .then(res=>{
-                console.log("配置信息",res)
+                //console.log("配置信息",res)
                 if(res.data.code == 200){
                         this.ListData = res.data.data[0]
                 }else{
@@ -74,6 +70,24 @@ export default {
                     return false
                 }
             })     
+        },
+        // 查询全部
+        Queryall1(){
+            this.axios.post(this.$api_router.solutionmenu+'findAll')
+            .then(res=>{
+              //  console.log(res)
+                if(res.data.code == 200){
+                        this.BarData = res.data.data
+                }else{
+                    return false
+                }
+            })     
+        },
+        // 二级跳转
+        ToDetail(id){
+            // console.log(id)
+            this.$router.push({name: "Secondary", params: {Id:id}})
+            // this.$router.push({path:'/solution/secondary',query:{Id:id}})
         },
     }
 }

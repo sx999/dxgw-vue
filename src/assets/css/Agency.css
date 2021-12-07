@@ -126,4 +126,11 @@
     border-radius: 4px 4px 4px 4px;
     cursor: pointer;
 }
-
+.Agency-box .center2 .form .input1 input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: #aab2bd;
+    /* placeholder字体大小  */
+    /* font-size: 12px; */
+    /* placeholder位置  */
+    /* text-align: right; */
+}

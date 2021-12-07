@@ -47,7 +47,7 @@ export default {
         Queryall(){
             this.axios.post(this.$api_router.banner+'findAll')
             .then(res=>{
-                console.log("banenr图",res)
+               // console.log("banenr图",res)
                 if(res.data.code == 200){
                         this.ListData = res.data.data
                 }else{

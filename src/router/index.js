@@ -25,14 +25,42 @@ const routes = [
         component: () => import('../views/Page/Home.vue')
       },
       {
-        path: '/Industry',
-        name: 'Industry',
-        component: () => import('../views/Page/Industry.vue')
+        path: '/industry',
+        // name: 'Industry',
+        component: () => import('../views/Page/Industry.vue'),
+        children:[
+              {path:"",redirect:"/industry/industryclass"},
+              {
+                 path:"/industry/industrydetail",
+                 name: 'IndustryDetail',
+                 component: () => import('../views/Page/IndustryDetail.vue'),
+              },
+              {
+                path:"/industry/industryclass",
+                name: 'IndustryClass',
+                component: () => import('../views/Page/IndustryClass.vue'),
+             },
+        ]
       },
+      // {
+      //   path: '/solution',
+      //   name: 'Solution',
+      //   component: () => import('../views/Page/Solution.vue'),
+      //   children:[
+      //      {path:"/solution/secondary",
+      //       name: 'Secondary',
+      //      component: () => import('../views/Page/Secondary.vue'),},
+      //   ]
+      // },
       {
         path: '/solution',
         name: 'Solution',
-        component: () => import('../views/Page/Solution.vue')
+        component: () => import('../views/Page/Solution.vue'),
+      },
+      {
+        path: '/secondary',
+        name: 'Secondary',
+        component: () => import('../views/Page/Secondary.vue'),
       },
       {
         path: '/agency',

@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="Module1 flex flex-jcsb">
-            <div class="Module1-left" v-for="(item,index) in list1" :key="index">
+            <div class="Module1-left" v-for="(item,index) in list1" :key="index" @click="Godetail(item.newsID)">
                 <img :src="item.newsImagePath" alt="无法加载">
                 <div class="block flex flex-aic flex-jcsb">
                     <p>{{item.newsTitle}}</p>
@@ -20,7 +20,7 @@
                 </div> 
             </div>  
             <div class="Module1-right flex flex-jcsb">
-                <div class="list flex" v-for="(item,index) in list2" :key="index">
+                <div class="list flex" v-for="(item,index) in list2" :key="index" @click="Godetail(item.newsID)">
                     <div class="list-img">
                         <img :src="item.newsImagePath" alt="无法加载">
                     </div>
@@ -61,7 +61,7 @@ export default {
         Queryall(){
             this.axios.post(this.$api_router.industry+'findAll')
             .then(res=>{
-                console.log("资讯",res)
+               // console.log("资讯",res)
                 if(res.data.code == 200){
                         this.ListData = res.data.data
                         this.Dateformatting()  
@@ -70,6 +70,10 @@ export default {
                     return false
                 }
             })     
+        },
+        //跳转详情
+        Godetail(id){
+            this.$router.push({path:'/industry/industrydetail',query:{id:id}})
         },
            //时间格式化
         Dateformatting(){

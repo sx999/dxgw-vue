@@ -72,7 +72,7 @@ export default {
           Queryall(){
             this.axios.post(this.$api_router.system+'findAll')
             .then(res=>{
-                console.log("配置信息",res)
+               // console.log("配置信息",res)
                 if(res.data.code == 200){
                         this.listdata = res.data.data[0]
                 }else{

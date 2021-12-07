@@ -42,7 +42,7 @@ export default {
             this.loading = true
             this.axios.post(this.$api_router.function+'findAll')
             .then(res=>{
-                console.log("功能介绍",res)
+               // console.log("功能介绍",res)
                 if(res.data.code == 200){
                         this.listData = res.data.data
                 }else{
