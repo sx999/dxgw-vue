@@ -1,18 +1,23 @@
 <template>
-    <!-- APP下载-->
     <div class="Contact-box">
-        <h1>APP下载</h1>
+        <!-- 暂无此页面 -->
+         <Nomatch></Nomatch>
     </div>
 </template>
 <script>
+import Nomatch from '../../components/Nomatch.vue'
 export default {
     data(){
         return{
-
+            
         }
+    },
+    components:{Nomatch},
+    methods:{
+      
     }
 }
 </script>
 <style scoped>
-
+   
 </style>

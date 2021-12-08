@@ -121,7 +121,7 @@
     margin-top: 34px;
     margin-left: 32px;
     padding-right: 60px;
-    /* height: 135px; */
+    height: 87px;
     line-height: 26px;
     font-size: 16px;
     font-weight: 500;
@@ -163,4 +163,7 @@
     text-align: center;
     line-height: 50px;
     cursor: pointer;
+}
+.Industry-box .center .list .black-back{
+    background-color: #b5cbf1;
 }

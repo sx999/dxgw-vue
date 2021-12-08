@@ -135,7 +135,7 @@ export default {
         Queryall(){
             this.axios.post(this.$api_router.company+'findAll')
             .then(res=>{
-                console.log("企业介绍",res)
+                //console.log("企业介绍",res)
                 if(res.data.code == 200){
                         this.listData = res.data.data
                         // this.$Message.success('查询完成!');
@@ -148,7 +148,7 @@ export default {
         Queryall2(){
             this.axios.post(this.$api_router.system+'findAll')
             .then(res=>{
-                console.log("系统配置",res)
+                //console.log("系统配置",res)
                 if(res.data.code == 200){
                         this.listData2 = res.data.data[0]
                         // this.$Message.success('查询完成!');
@@ -161,7 +161,7 @@ export default {
         Queryall3(){
             this.axios.post(this.$api_router.cooperator+'findAll')
             .then(res=>{
-                console.log("合作单位",res)
+               // console.log("合作单位",res)
                 if(res.data.code == 200){
                         this.listData3 = res.data.data
                         // this.$Message.success('查询完成!');

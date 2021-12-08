@@ -10,6 +10,14 @@ import Index from '../views/Index/index.vue'
 // import Album from '../views/Page/Album.vue'
 // import About from '../views/Page/About.vue'
 
+// 子路由
+import SolutionPage1 from '../views/Page/Solution/SolutionPage1.vue'
+import SolutionPage2 from '../views/Page/Solution/SolutionPage2.vue'
+import SolutionPage3 from '../views/Page/Solution/SolutionPage3.vue'
+import SolutionPage4 from '../views/Page/Solution/SolutionPage4.vue'
+import SolutionPage5 from '../views/Page/Solution/SolutionPage5.vue'
+import SolutionPage6 from '../views/Page/Solution/SolutionPage6.vue'
+import SolutionPage7 from '../views/Page/Solution/SolutionPage7.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -31,15 +39,15 @@ const routes = [
         children:[
               {path:"",redirect:"/industry/industryclass"},
               {
-                 path:"/industry/industrydetail",
-                 name: 'IndustryDetail',
-                 component: () => import('../views/Page/IndustryDetail.vue'),
-              },
-              {
                 path:"/industry/industryclass",
                 name: 'IndustryClass',
                 component: () => import('../views/Page/IndustryClass.vue'),
              },
+              {
+                 path:"/industry/industrydetail",
+                 
+                 component: () => import('../views/Page/IndustryDetail.vue'),
+              },
         ]
       },
       // {
@@ -55,7 +63,46 @@ const routes = [
       {
         path: '/solution',
         name: 'Solution',
-        component: () => import('../views/Page/Solution.vue'),
+        component: () => import('../views/Page/Solution/Solution.vue'),
+        children:[
+              //  {path:"",redirect:"/solution/solutionpage1"},
+               {
+                 path:"/solution/solutionpage1",
+                 name: 'SolutionPage1',
+                 component:SolutionPage1
+               },
+               {
+                 path:"/solution/solutionpage2",
+                 name: 'SolutionPage2',
+                 component:SolutionPage2
+               },
+               {
+                 path:"/solution/solutionpage3",
+                 name: 'SolutionPage3',
+                 component:SolutionPage3
+               },
+               {
+                 path:"/solution/solutionpage4",
+                 name: 'SolutionPage4',
+                 component:SolutionPage4
+               },
+               {
+                path:"/solution/solutionpage5",
+                name: 'SolutionPage5',
+                component:SolutionPage5
+              },
+              {
+                path:"/solution/solutionpage6",
+                name: 'SolutionPage6',
+                component:SolutionPage6
+              },
+              {
+                path:"/solution/solutionpage7",
+                name: 'SolutionPage7',
+                component:SolutionPage7
+              },
+            ]
+        
       },
       {
         path: '/secondary',

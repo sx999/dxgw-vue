@@ -10,7 +10,7 @@
                     <p class="p2">DU XIU KE JI</p>   
                 </div>
             </div>
-        <el-menu 
+        <el-menu
         :default-active="'/' +this.$route.path.split('/')[1]"
         class="el-menu-demo navt"
         mode="horizontal" 
@@ -21,19 +21,20 @@
             <el-menu-item index="/home"><p>首页</p> </el-menu-item>
             <el-menu-item index="/industry">行业资讯</el-menu-item>
             <el-submenu index="/solution" style="width: 125px">
-                   <template slot="title" class="titlefont">解决方案</template>
-                   <ul class="pull-down">
+                    <template slot="title" class="titlefont">
+                       解决方案
+                    </template>
+                   <!-- <ul class="pull-down">
                        <li v-for="(item,index) in BarData" :key="index" @click="ToDetail(item.menuId)">{{item.menuName}}</li>
-                   </ul>
-                    <!-- <el-menu-item  class="smalldiv" index="/"><p class="smallp">门禁系统</p> </el-menu-item>
-                    <el-menu-item class="smalldiv" index="/">智能校服</el-menu-item>
-                    <el-menu-item class="smalldiv" index="/">智慧教室</el-menu-item>
-                    <el-menu-item class="smalldiv" index="/">录播教室</el-menu-item>
-                    <el-menu-item class="smalldiv" index="/">互动课堂</el-menu-item>
-                    <el-menu-item class="smalldiv" index="/">智慧照明</el-menu-item>
-                    <el-menu-item class="smalldiv" index="/">智慧图书馆</el-menu-item> -->
+                   </ul> -->
+                    <el-menu-item  class="smalldiv" index="/solution/solutionpage2">门禁系统</el-menu-item>
+                    <el-menu-item class="smalldiv" index="/solution/solutionpage1">智能校服</el-menu-item>
+                    <el-menu-item class="smalldiv" index="/solution/solutionpage3">智慧教室</el-menu-item>
+                    <el-menu-item class="smalldiv" index="/solution/solutionpage4">录播教室</el-menu-item>
+                    <el-menu-item class="smalldiv" index="/solution/solutionpage5">互动课堂</el-menu-item>
+                    <el-menu-item class="smalldiv" index="/solution/solutionpage6">智慧照明</el-menu-item>
+                    <el-menu-item class="smalldiv" index="/solution/solutionpage7">智慧图书馆</el-menu-item>
             </el-submenu>
-        
             <el-menu-item index="/agency">代理加盟</el-menu-item>
             <el-menu-item index="/contact">APP下载</el-menu-item>
             <el-menu-item index="/album">宣传画册</el-menu-item>
@@ -46,7 +47,8 @@ export default {
     data(){ 
         return{
             ListData:[],
-            BarData:[]
+            BarData:[],
+             activeIndex: '',
         }
     },
     created(){},
@@ -157,6 +159,7 @@ export default {
     }
     .smalldiv{
         width: 100px !important;
+        overflow: hidden !important;
     }
     .pull-down {
         width: 100px;
@@ -171,5 +174,16 @@ export default {
     }
     .pull-down li:hover{
         background-color:rgba(200,200,200,0.5) ;
+    }
+    .el-submenu__title {
+        width: 100px;
+        /* text-align: center; */
+        font-size: 14px;
+        color: #303133;
+        padding: 0px 15px;
+        cursor: pointer;
+        transition: border-color .3s,background-color .3s,color .3s;
+        box-sizing: border-box;
+        margin-left: 8px;
     }
 </style>

@@ -7,9 +7,9 @@
         <div class="content  module-box">
             <div class="title">
                 <div class="m-title flex flex-aic">
-                    <img class="m-title-img" src="../../assets/images/group.png" alt="">
+                    <img class="m-title-img" src="../../../assets/images/group.png" alt="">
                     <p>{{listdata1.menuName}}</p> 
-                    <img class="m-title-img rotate" src="../../assets/images/group.png" alt="">
+                    <img class="m-title-img rotate" src="../../../assets/images/group.png" alt="">
                 </div>
                 <div class="m-title flex flex-aic">
                     <span>Smart clothes</span> 
@@ -25,14 +25,14 @@
 export default {
     data(){
         return{
-            listdata1:{},
+            listdata1:[],
             listdata2:{},
             id:""
         }
     },
     created(){},
     mounted(){
-        this.id = this.$route.params.Id
+        // this.id = this.$route.params.Id
         this.Queryall()
         
     },
@@ -41,11 +41,11 @@ export default {
     },
     methods:{
         Queryall(){
-            this.axios.post(this.$api_router.solutionmenu+'findAllId?menuId='+this.id)
+            this.axios.post(this.$api_router.solutionmenu+'findAll')
             .then(res=>{
-               console.log("菜单数据",res)
+               //console.log("菜单数据",res)
                 if(res.data.code == 200){
-                        this.listdata1 = res.data.data
+                        this.listdata1 = res.data.data[2]
                         this.Queryall1()
                         // this.$Message.success('查询完成!');
                 }else{
@@ -56,7 +56,7 @@ export default {
         Queryall1(){
             this.axios.post(this.$api_router.solution+'findMenuId?menuId='+this.listdata1.menuId)
             .then(res=>{
-               console.log("详细内容",res)
+               //console.log("详细内容",res)
                 if(res.data.code == 200){
                         this.listdata2 = res.data.data
                         // this.$Message.success('查询完成!');
@@ -70,5 +70,5 @@ export default {
 }
 </script>
 <style scoped>
-   @import '../../assets/css/Solutionpage.css';
+   @import '../../../assets/css/Solutionpage.css';
 </style>

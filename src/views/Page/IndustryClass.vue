@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="list">
-                <div class="list-data flex" v-for="(item,index) in  listData" :key="index" @click="goDetail(item.newsID)">
+                <div class="list-data flex" v-for="(item,index) in  countData" :key="index" @click="goDetail(item.newsID)">
                     <div class="left">
                         <img :src="item.newsImagePath" alt="">
                     </div>
@@ -35,9 +35,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="button" @click="Addpage()">
+                <div class="button" @click="Addpage()" v-show="this.listData.length>=this.cou">
                    <i class="el-icon-loading" v-show="loading"></i>
                     加载更多
+                </div>
+                <div class="button black-back" v-show="this.listData.length<this.cou">
+                    暂无更多了
                 </div>
             </div>
         </div>
@@ -52,7 +55,8 @@ export default {
             show:true,
             //默认显示条数
             cou: 5,
-            timepage:null
+            timepage:null,
+            time:"",
         }
     },
     created(){},
@@ -64,6 +68,7 @@ export default {
     destroyed() {
 		// 销毁事件
 		window.removeEventListener("keydown", this.keyDown, false);
+        clearInterval(this.time)
 	},
     computed:{
         noMore() {
@@ -74,12 +79,10 @@ export default {
         //     return this.listData.splice(0,1)
         // }
         countData() {  // 计算属性使用切片生成新数组
-                this.loading = true
                 let data = [];
                	// 大于三条，使用切片，返回新数组
                 if (this.listData.length > 5) {
                     data = this.listData.slice(0, this.cou);
-                    this.loading = false
                     return data;
                 } else {
                 	// 否则使用原来数组，不进行切片处理
@@ -94,7 +97,7 @@ export default {
         Queryall(){
             this.axios.post(this.$api_router.industry+'findAll')
             .then(res=>{
-                console.log(res)
+              //  console.log(res)
                 if(res.data.code == 200){
                         this.listData = res.data.data
                         this.Dateformatting()
@@ -138,11 +141,13 @@ export default {
             }
             // this.MsgSort(this.listData)
         },
+        // 加载更多
         Addpage(){
             this.loading = true
-            var time = setInterval(() => {
+            this.time = setInterval(() => {
                  this.loading=false
-            },2000)
+                 this.cou+=5
+            },1500)
         },
         // 重置查询
         reset(){

@@ -1,18 +1,23 @@
 <template>
-    <!-- 宣传画册-->
     <div class="Album-box">
-        <h1>宣传画册</h1>
+        <!-- 暂无此页面 -->
+        <Nomatch></Nomatch>
     </div>
 </template>
 <script>
+import Nomatch from '../../components/Nomatch.vue'
 export default {
     data(){
         return{
-
+            
         }
+    },
+    components:{Nomatch},
+    methods:{
+        
     }
 }
 </script>
 <style scoped>
-
+    
 </style>
