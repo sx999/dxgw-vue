@@ -5,15 +5,22 @@
             <p>{{listdata2.schoolHeadline}}</p>
         </div>
         <div class="content  module-box">
+            <div class="mar-auto">
+                <div class="folte-l" @click="back()">
+                    <span class="iconfont icon-fanhui"></span>
+                    <a href="javascript:;">返回</a>
+                    <!-- <router-link to="/industry">返回</router-link>  -->
+                </div>
+            </div>
             <div class="title">
                 <div class="m-title flex flex-aic">
                     <img class="m-title-img" src="../../../assets/images/group.png" alt="">
                     <p>{{listdata1.menuName}}</p> 
                     <img class="m-title-img rotate" src="../../../assets/images/group.png" alt="">
                 </div>
-                <div class="m-title flex flex-aic">
+                <!-- <div class="m-title flex flex-aic">
                     <span>Smart clothes</span> 
-                </div>
+                </div> -->
             </div>
             <div class="list">
                <p v-html="listdata2.schoolDetails"></p>
@@ -64,6 +71,10 @@ export default {
                     return false
                 }
             })     
+        },
+         //返回上一层
+        back(){
+            this.$router.go(-1);
         },
 
     }

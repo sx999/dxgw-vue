@@ -74,9 +74,12 @@
     color: #777777;
 }
 .Module1-right .list .list-text .p1{
+    /* width: 332px; */
     margin-top: 16px;
     font-size: 20px;
-    font-weight: bold;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 .Module1-right .list .list-text .p2{
     margin-top: 14px;

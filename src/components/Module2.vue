@@ -18,7 +18,7 @@
                             <span class="iconfont icon-tushuguan"></span>
                             <p class="p1">智慧图书馆</p>
                         </div>
-                        <div class="block flex flex-aic">
+                        <div class="block flex flex-aic" @click="$router.push({path:'/solution/solutionpage7'})">
                             <p>查看更多</p>
                             <span class="iconfont icon-youjiantou"></span>
                         </div>
@@ -28,7 +28,7 @@
                             <span class="iconfont icon-menjin"></span>
                             <p class="p1">门禁系统</p>
                         </div>
-                        <div class="block flex flex-aic">
+                        <div class="block flex flex-aic" @click="$router.push({path:'/solution/solutionpage2'})"> 
                             <p>查看更多</p>
                             <span class="iconfont icon-youjiantou"></span>
                         </div>
@@ -38,7 +38,7 @@
                             <span class="iconfont icon-clothes"></span>
                             <p class="p1">智能校服</p>
                         </div>
-                        <div class="block flex flex-aic">
+                        <div class="block flex flex-aic" @click="$router.push({path:'/solution/solutionpage1'})">
                             <p>查看更多</p>
                             <span class="iconfont icon-youjiantou"></span>
                         </div>
@@ -48,7 +48,7 @@
                             <span class="iconfont icon-jiaoshi"></span>
                             <p class="p1">智慧教室</p>
                         </div>
-                        <div class="block flex flex-aic">
+                        <div class="block flex flex-aic" @click="$router.push({path:'/solution/solutionpage3'})">
                             <p>查看更多</p>
                             <span class="iconfont icon-youjiantou"></span>
                         </div>
@@ -58,7 +58,7 @@
                             <span class="iconfont icon-luxiang"></span>
                             <p class="p1">录播教室</p>
                         </div>
-                        <div class="block flex flex-aic">
+                        <div class="block flex flex-aic" @click="$router.push({path:'/solution/solutionpage4'})">
                             <p>查看更多</p>
                             <span class="iconfont icon-youjiantou"></span>
                         </div>
@@ -68,7 +68,7 @@
                             <span class="iconfont icon-banjishangke"></span>
                             <p class="p1">互动课堂</p>
                         </div>
-                        <div class="block flex flex-aic">
+                        <div class="block flex flex-aic" @click="$router.push({path:'/solution/solutionpage5'})">
                             <p>查看更多</p>
                             <span class="iconfont icon-youjiantou"></span>
                         </div>
@@ -78,7 +78,7 @@
                             <span class="iconfont icon-deng"></span>
                             <p class="p1">智慧照明</p>
                         </div>
-                        <div class="block flex flex-aic">
+                        <div class="block flex flex-aic" @click="$router.push({path:'/solution/solutionpage6'})">
                             <p>查看更多</p>
                             <span class="iconfont icon-youjiantou"></span>
                         </div>

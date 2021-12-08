@@ -29,9 +29,36 @@
     letter-spacing: 3px;
     font-family: 'ziti';
 }
+.Solutionpage-box .content .mar-auto{
+    width: 1024px;
+    margin: auto;
+    /* margin-top: 20px; */
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+.Solutionpage-box .content  .mar-auto .folte-l{
+    float: left;   
+    font-size: 30px;
+    cursor: pointer;
+    color: #4282F4;
+    opacity: .6;
+    border-bottom: 1px solid #777777;
+}
+.Solutionpage-box .content  .mar-auto .folte-l span{    
+    font-size: 30px;
+}
+.Solutionpage-box .mar-auto a{
+    font-size: 22px;
+    margin-left: 6px;
+    color: #333333;
+}
+.Solutionpage-box .content .mar-auto .folte-l:hover{
+    opacity: .9;
+}
 .Solutionpage-box .content .list{
     text-indent: 40px;
-    font-size: 20px;
+    font-size: 16px;
     font-family: PingFang SC-Medium, PingFang SC;
     font-weight: 500;
     color: #5B5B5B;
@@ -39,4 +66,20 @@
 }
 .Solutionpage-box .content p{
   margin: 0 0 10px 0;
+}
+.Solutionpage-box .content .list p .ql-align-right{
+    text-align: right;
+}
+.Solutionpage-box .content .list p .ql-align-center{
+    text-align: center;
+}
+.Solutionpage-box .content .list p .ql-align-left{
+    text-align:left;
+}
+.Solutionpage-box .content .list p .ql-size-large{
+    font-size: 18px;
+}
+
+.Solutionpage-box .content .list p img{
+    width: 100%;
 }
