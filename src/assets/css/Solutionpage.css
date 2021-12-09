@@ -57,7 +57,7 @@
     opacity: .9;
 }
 .Solutionpage-box .content .list{
-    text-indent: 40px;
+    /* text-indent: 40px; */
     font-size: 16px;
     font-family: PingFang SC-Medium, PingFang SC;
     font-weight: 500;
@@ -77,9 +77,9 @@
     text-align:left;
 }
 .Solutionpage-box .content .list p .ql-size-large{
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
-/* .Solutionpage-box .content .list p img{
-    width: 100%;
-} */
+.Solutionpage-box .content .list p img{
+    /* width: 100%; */
+}

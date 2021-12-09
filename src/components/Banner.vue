@@ -115,7 +115,7 @@ export default {
         opacity: 1;
         cursor: pointer;
         /* color: #158eff; */
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 1);
         background-color: rgba(66,130,244,0.8);
     }
     .banner-img .text .button:hover{

@@ -10,8 +10,10 @@
                     <p class="p2">DU XIU KE JI</p>   
                 </div>
             </div>
+             <!-- :default-active="'/' +this.$route.path.split('/')[1]" 
+             :default-active="this.$route.path"-->
         <el-menu
-        :default-active="'/' +this.$route.path.split('/')[1]"
+       :default-active=activeMenu1
         class="el-menu-demo navt"
         mode="horizontal" 
         text-color="#333333"
@@ -48,7 +50,9 @@ export default {
         return{
             ListData:[],
             BarData:[],
-             activeIndex: '',
+            activeIndex: '',
+            myPath:"",
+             defaultOpen: ['1','1-1'] // 默认展开菜单项
         }
     },
     created(){},
@@ -57,7 +61,28 @@ export default {
       this.Queryall1()
    },
     computed:{
-
+        activeMenu1() {
+            const route = this.$route
+            const { meta, path } = route
+            // if set path, the sidebar will highlight the path you set
+            // 可以在路由配置文件中设置自定义的路由路径到meta.activeMenu属性中，来控制菜单自定义高亮显示
+            if (meta.activeMenu) {
+            return meta.activeMenu
+        }
+        return path
+        },
+        activeMenu() {
+            const route = this.$route
+            const { meta, path } = route
+            // if set path, the sidebar will highlight the path you set
+            if (meta.apiActiveMenu) { // 注意这里很重要
+                return meta.apiActiveMenu
+            }
+            return path
+        }
+    },
+    watch: {
+      
     },
     methods:{
         //调用

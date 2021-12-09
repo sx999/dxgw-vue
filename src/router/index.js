@@ -30,7 +30,7 @@ const routes = [
       {
         path: '/home',
         name: 'Home',
-        component: () => import('../views/Page/Home.vue')
+        component: () => import('../views/Page/Home.vue'),
       },
       {
         path: '/industry',
@@ -42,11 +42,18 @@ const routes = [
                 path:"/industry/industryclass",
                 name: 'IndustryClass',
                 component: () => import('../views/Page/IndustryClass.vue'),
+                meta: {
+                  activeMenu: '/industry',
+                  apiActiveMenu: '/industry/industryclass' // 接口文档的子菜单高亮
+                }
              },
               {
                  path:"/industry/industrydetail",
-                 
                  component: () => import('../views/Page/IndustryDetail.vue'),
+                 meta: {
+                  activeMenu: '/industry',
+                  apiActiveMenu: '/industry/industrydetail' // 接口文档的子菜单高亮
+                }
               },
         ]
       },
@@ -69,12 +76,12 @@ const routes = [
                {
                  path:"/solution/solutionpage1",
                  name: 'SolutionPage1',
-                 component:SolutionPage1
+                 component:SolutionPage1,
                },
                {
                  path:"/solution/solutionpage2",
                  name: 'SolutionPage2',
-                 component:SolutionPage2
+                 component:SolutionPage2,
                },
                {
                  path:"/solution/solutionpage3",

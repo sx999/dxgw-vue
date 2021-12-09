@@ -80,6 +80,8 @@
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
+    color: #333;
+    font-weight: bold;
 }
 .Module1-right .list .list-text .p2{
     margin-top: 14px;
