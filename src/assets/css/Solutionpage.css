@@ -64,9 +64,9 @@
     color: #5B5B5B;
     line-height: 32px;
 }
-.Solutionpage-box .content p{
-  /* margin: 0 0 10px 0; */
-}
+/* .Solutionpage-box .content p{
+  margin: 0 0 10px 0;
+} */
 .Solutionpage-box .content .list p .ql-align-right{
     text-align: right;
 }
@@ -80,6 +80,6 @@
     font-size: 18px;
 }
 
-.Solutionpage-box .content .list p img{
-    /* width: 100%; */
-}
+/* .Solutionpage-box .content .list p img{
+    width: 100%;
+} */
