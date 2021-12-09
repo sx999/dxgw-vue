@@ -64,6 +64,9 @@ export default {
         /* width: 100%; */
         position: relative;
     }
+    .banner-img img{
+        width: 100%;
+    }
     .banner-img .text{
         position:absolute;
         width: 520px;

@@ -40,9 +40,9 @@
             <div class="box-b">
                 <div class="put">
                     <p>Copyright &copy; 2021-2022 河南独秀科技有限公司</p>
-                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41019702003062" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41010202002811" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
                         <p class="flex flex-jcsb" style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;marginTop:5px;">
-                            <img src="../assets/images/xxx.png" alt="">&ensp;豫公网安备 41019702003062号
+                            <img src="../assets/images/xxx.png" alt="">&ensp;豫公网安备 41010202002811号
                         </p>
                     </a>
                 </div>
