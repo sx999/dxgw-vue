@@ -2,7 +2,7 @@
     <!-- 代理加盟-->
     <div class="Agency-box">
         <div class="banner">
-            <img src="../../assets/images/agency-banner.png" alt="">
+            <img :src="bannerimg" alt="">
             <!-- <p>加入我们</p> -->
         </div>
         <div class="box">
@@ -63,6 +63,7 @@
 export default {
     data(){
         return{
+            bannerimg:"https://dxkj2021-1306445192.cos.ap-nanjing.myqcloud.com/duxiu/77651639033198939.png",
             listdata:[
                 {icon:"icon-jiaoyu",title:"教育系统相关资源",text:"国家政策支持 — AI+智慧校园"},
                 {icon:"icon-shezhi",title:"一系列的技术服务",text:"提供安装到售后完整技术支持"},

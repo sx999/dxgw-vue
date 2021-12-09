@@ -206,7 +206,7 @@ export default {
         /* text-align: center; */
         font-size: 14px;
         color: #303133;
-        padding: 0px 15px;
+        padding: 0px 15px !important;
         cursor: pointer;
         transition: border-color .3s,background-color .3s,color .3s;
         box-sizing: border-box;
@@ -216,7 +216,7 @@ export default {
         /* font-size: 15px; */
         text-align: center;
         min-width: 110px !important;
-        margin-left: 6px !important;
+        /* margin-left: 6px !important; */
         font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu !important;
     }
      .el-menu .smalldiv:hover{

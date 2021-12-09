@@ -2,7 +2,7 @@
     <!-- 关于我们-->
     <div class="About-box">
         <div class="banner">
-            <img src="../../assets/images/about-banner.png" alt="">
+            <img :src="bannerimg" alt="">
             <p>关于我们</p>
         </div>
         <div class="center1  module-box">
@@ -109,6 +109,7 @@
 export default {
     data(){
         return{
+            bannerimg:"https://dxkj2021-1306445192.cos.ap-nanjing.myqcloud.com/duxiu/45541639033092089.png",
             listData:[],
             soft:[
                 {src:"https://dxkj2021-1306445192.cos.ap-nanjing.myqcloud.com/duxiu/85241638771441031.png"},
