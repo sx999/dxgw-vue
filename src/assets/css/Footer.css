@@ -137,7 +137,7 @@
 .Footer-box .box-b .put{
     font-size: 13px;
     text-align: center;
-    float: right;
+    /* float: right; */
     /* margin:0 auto; */
     padding:20px 0;
 }

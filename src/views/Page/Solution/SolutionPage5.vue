@@ -1,8 +1,11 @@
 <template>
   <div class="Solutionpage-box">
         <div class="banner">
-            <img :src="listdata2.schoolPic" alt="">
-            <p>{{listdata2.schoolHeadline}}</p>
+            <!-- <img :src="listdata2.schoolPic" alt="">
+            <p>{{listdata2.schoolHeadline}}</p> -->
+             <img src="../../../assets/images/solution.png" alt="">
+            <p>多种智能方案,构建智慧校园</p>
+            <div class="mask"></div>
         </div>
         <div class="content  module-box">
             <div class="mar-auto">

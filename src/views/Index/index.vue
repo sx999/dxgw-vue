@@ -137,7 +137,7 @@ export default({
         font-size: 30px;
     }
     .scollTop:hover{
-        background-color:rgba(155, 151, 151, 0.5);
+        background-color:rgba(193, 196, 197, 0.5);
     }
     /* 回顶style end*/
 </style>
