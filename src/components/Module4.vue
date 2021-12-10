@@ -1,28 +1,31 @@
 <template>
     <!-- 首页-功能介绍 -->
-    <div class="module-box">
-        <div class="title">
-            <div class="m-title flex flex-aic">
-                <img class="m-title-img" src="../assets/images/group.png" alt="">
-                <p>功能介绍</p> 
-                <img class="m-title-img rotate" src="../assets/images/group.png" alt="">
-            </div>
-            <div class="m-title flex flex-aic">
-                <span>AFeatures</span> 
-            </div>
-        </div>
-        <div class="Module4 flex">
-            <div class="list flex" v-for="(item,index) in listData" :key="index">
-                <div class="div-radius">
-                    <img class="div-img" :src="item.featurePic" alt="">
+    <div class="back-color-box">
+        <div class="module-box">
+            <div class="title">
+                <div class="m-title flex flex-aic">
+                    <img class="m-title-img" src="../assets/images/group.png" alt="">
+                    <p>功能介绍</p> 
+                    <img class="m-title-img rotate" src="../assets/images/group.png" alt="">
                 </div>
-                <div class="text flex">
-                    <p>{{item.featureHeadline}}</p>
-                    <p class="p2">{{item.featureDetails}}</p>
+                <div class="m-title flex flex-aic">
+                    <span>AFeatures</span> 
+                </div>
+            </div>
+            <div class="Module4 flex">
+                <div class="list flex" v-for="(item,index) in listData" :key="index">
+                    <div class="div-radius">
+                        <img class="div-img" :src="item.featurePic" alt="">
+                    </div>
+                    <div class="text flex">
+                        <p>{{item.featureHeadline}}</p>
+                        <p class="p2">{{item.featureDetails}}</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
 </template>
 <script>
 export default {
@@ -55,5 +58,10 @@ export default {
 }
 </script>
 <style scoped>
+    .back-color-box{
+        width: 100%;
+        height: 608px;
+        background: rgba(133, 192, 233, 0.1);
+    }
    @import "../assets/css/Module4.css";
 </style>

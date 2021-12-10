@@ -24,10 +24,13 @@
 /* home 页面标题全局样式 */
 .module-box{
     width: 1024px;
+    height: 100%;
     margin: auto;
     margin-top: 80px;
 }
 .module-box .title{
+    width: 100%;
+    padding-top: 16px;
     margin-bottom: 50px;
 }
 .module-box .title .m-title{

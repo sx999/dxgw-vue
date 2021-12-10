@@ -8,8 +8,7 @@
       </el-carousel-item>
     </el-carousel>
   </div> -->
-  <el-row>
-    <el-col :span="24">
+
         <div class="banner-img"> 
             <img src="../assets/images/banner.png" alt="">
             <div class="text">
@@ -24,8 +23,7 @@
                 </div>
             </div>
         </div>
-    </el-col>
-</el-row>
+
   
 </template>
 <script>
@@ -61,17 +59,22 @@ export default {
 </script>
 <style scoped>
     .banner-img{
-        /* width: 100%; */
+        width: 100%;
+        height: 100%;
         position: relative;
+
     }
     .banner-img img{
+        /* position: relative; */
         width: 100%;
+        height: 100%;
     }
     .banner-img .text{
         position:absolute;
         width: 520px;
         top: 159px;
-        left: 448px;
+        /* left: 448px; */
+        left: 22%;
         bottom: 0;
         right: 0;
         /* margin: 0 auto; */

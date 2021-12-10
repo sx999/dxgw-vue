@@ -25,8 +25,32 @@
                     <span>Smart clothes</span> 
                 </div> -->
             </div>
-            <div class="list">
+            <div class="list" v-show="!show">
                <p v-html="listdata2.schoolDetails"></p>
+            </div>
+            <div class='loader' v-show="show">
+                <!-- <div class='loader_overlay'></div> -->
+                <div class='loader_cogs'>
+                    <div class='loader_cogs__top'>
+                    <div class='top_part'></div>
+                    <div class='top_part'></div>
+                    <div class='top_part'></div>
+                    <div class='top_hole'></div>
+                </div>
+                <div class='loader_cogs__left'>
+                    <div class='left_part'></div>
+                    <div class='left_part'></div>
+                    <div class='left_part'></div>
+                    <div class='left_hole'></div>
+                </div>
+                <div class='loader_cogs__bottom'>
+                    <div class='bottom_part'></div>
+                    <div class='bottom_part'></div>
+                    <div class='bottom_part'></div>
+                    <div class='bottom_hole'></div>
+                </div>
+                    <p>loading...</p>
+                </div>
             </div>
         </div>
   </div>
@@ -37,7 +61,8 @@ export default {
         return{
             listdata1:[],
             listdata2:{},
-            id:""
+            id:"",
+            show:true,
         }
     },
     created(){},
@@ -69,6 +94,7 @@ export default {
               // console.log("详细内容",res)
                 if(res.data.code == 200){
                         this.listdata2 = res.data.data
+                        this.show = false
                         // this.$Message.success('查询完成!');
                 }else{
                     return false

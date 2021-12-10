@@ -15,6 +15,12 @@ Vue.prototype.moment = Moment
 import axios from 'axios'
 Vue.prototype.axios = axios;    //全局注册，
 
+// import VueLazyload from 'vue-lazyload';
+// Vue.use(VueLazyload, {
+//   error: 'assets/images/error.jpg',
+//   loading: 'assets/images/loading.gif'
+// });
+
 //字体
 import './assets/css/fontCss.css';
 

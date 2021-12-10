@@ -30,7 +30,7 @@
                        <li v-for="(item,index) in BarData" :key="index" @click="ToDetail(item.menuId)">{{item.menuName}}</li>
                    </ul> -->
                     <el-menu-item  class="smalldiv" index="/solution/solutionpage2">门禁系统</el-menu-item>
-                    <el-menu-item class="smalldiv" index="/solution/solutionpage1">智能校服</el-menu-item>
+                    <el-menu-item class="smalldiv" index="/solution/solutionpage1">宿管系统</el-menu-item>
                     <el-menu-item class="smalldiv" index="/solution/solutionpage3">智慧教室</el-menu-item>
                     <el-menu-item class="smalldiv" index="/solution/solutionpage4">录播教室</el-menu-item>
                     <el-menu-item class="smalldiv" index="/solution/solutionpage5">互动课堂</el-menu-item>
