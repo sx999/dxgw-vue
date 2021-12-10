@@ -52,7 +52,7 @@
      color: #333333;
     background: rgba(235, 242, 255, 0.6);
     border-radius: 4px 4px 4px 4px;
-    transition: all .7s;
+    transition: all .9s;
     cursor: default;
 }
 .Agency-box .center1 .list li:nth-child(1),

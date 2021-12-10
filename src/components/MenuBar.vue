@@ -2,8 +2,8 @@
     <!-- 导航 -->
     <div class="header-home"> 
             <div class="logo flex flex-aic">
-                <div class="logo-left-img">
-                     <img :src="ListData.sysLogo" alt="Logo" @click="refresh()">
+                <div class="logo-left-img" @click="refresh()">
+                     <img :src="ListData.sysLogo" alt="Logo" >
                 </div>
                 <div class="logo-text themecolors ">
                     <p class="p1 basic-font">独秀科技</p>
@@ -39,7 +39,7 @@
             </el-submenu>
             <el-menu-item index="/agency">代理加盟</el-menu-item>
             <el-menu-item index="/contact">APP下载</el-menu-item>
-            <el-menu-item index="/album">宣传画册</el-menu-item>
+            <el-menu-item index="/album"> 宣传画册</el-menu-item>
             <el-menu-item index="/about">关于我们</el-menu-item>
         </el-menu>
     </div>
@@ -116,6 +116,9 @@ export default {
             this.$router.push({name: "Secondary", params: {Id:id}})
             // this.$router.push({path:'/solution/secondary',query:{Id:id}})
         },
+        refresh(){
+            this.$router.push({path:"/"})
+        },
     }
 }
 </script>
@@ -138,6 +141,7 @@ export default {
         color: #518DF5;
         display: flex;
         flex-direction: column;
+        cursor: pointer;
     }
     .logo .logo-text  .p1{
         letter-spacing: 3px;

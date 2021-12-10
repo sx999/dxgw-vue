@@ -62,7 +62,7 @@
     border-radius: 10px;
     position: absolute;
     height: 100px;
-    background: #f98db9;
+    background: #97ddff;
   }
    .loader_cogs__top div.top_hole {
     width: 50px;
@@ -152,7 +152,7 @@
     border-radius: 5px;
     position: absolute;
     height: 60px;
-    background: #ffcd66;
+    background: #97ddff;
   }
    .loader_cogs__bottom div.bottom_hole {
     width: 30px;

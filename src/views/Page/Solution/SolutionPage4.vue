@@ -49,7 +49,7 @@
                     <div class='bottom_part'></div>
                     <div class='bottom_hole'></div>
                 </div>
-                    <p>loading...</p>
+                    <p>加载中...</p>
                 </div>
             </div>
         </div>
