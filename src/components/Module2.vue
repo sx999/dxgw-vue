@@ -13,7 +13,7 @@
         </div>
         <div class="Module2">
             <ul id="ul" class="list" @scroll="handleScroll($event)">
-                    <li class="mar-none">
+                    <li class="mar-none" :style="{transform:'translateX('+number+')'}">
                         <div class="div1 flex">
                             <span class="iconfont icon-tushuguan"></span>
                             <p class="p1">智慧图书馆</p>
@@ -23,7 +23,7 @@
                             <span class="iconfont icon-youjiantou"></span>
                         </div>
                     </li>
-                    <li class="">
+                    <li class="" :style="{transform:'translateX('+number+')'}">
                         <div class="div1 flex">
                             <span class="iconfont icon-menjin"></span>
                             <p class="p1">门禁系统</p>
@@ -33,9 +33,9 @@
                             <span class="iconfont icon-youjiantou"></span>
                         </div>
                     </li>
-                    <li class="">
+                    <li class="" :style="{transform:'translateX('+number+')'}">
                         <div class="div1 flex">
-                            <span class="iconfont icon-guanliyuan"></span>
+                            <span class="iconfont icon-guanliyuan_jiaoseguanli"></span>
                             <p class="p1">宿管系统</p>
                         </div>
                         <div class="block flex flex-aic" @click="$router.push({path:'/solution/solutionpage1'})">
@@ -43,7 +43,7 @@
                             <span class="iconfont icon-youjiantou"></span>
                         </div>
                     </li>
-                    <li class="">
+                    <li class="" :style="{transform:'translateX('+number+')'}">
                         <div class="div1 flex">
                             <span class="iconfont icon-jiaoshi"></span>
                             <p class="p1">智慧教室</p>
@@ -53,7 +53,7 @@
                             <span class="iconfont icon-youjiantou"></span>
                         </div>
                     </li>
-                    <li class="">
+                    <li class="" :style="{transform:'translateX('+number+')'}">
                         <div class="div1 flex">
                             <span class="iconfont icon-luxiang"></span>
                             <p class="p1">录播教室</p>
@@ -63,7 +63,7 @@
                             <span class="iconfont icon-youjiantou"></span>
                         </div>
                     </li>
-                    <li class="">
+                    <li class="" :style="{transform:'translateX('+number+')'}">
                         <div class="div1 flex">
                             <span class="iconfont icon-banjishangke"></span>
                             <p class="p1">互动课堂</p>
@@ -73,7 +73,7 @@
                             <span class="iconfont icon-youjiantou"></span>
                         </div>
                     </li>
-                    <li class="">
+                    <li class="" :style="{transform:'translateX('+number+')'}">
                         <div class="div1 flex">
                             <span class="iconfont icon-deng"></span>
                             <p class="p1">智慧照明</p>
@@ -85,9 +85,9 @@
                     </li>
             </ul>
             <div class="three-small-button">
-                <div class="small-button marl-none" :class="this.con==1 ? 'back' :''"  @click="scroll1()"></div>
-                <div class="small-button" :class="this.con==2 ? 'back' :''" @click="scroll2()"></div>
-                <div class="small-button" :class="this.con==3 ? 'back' :''" @click="scroll3()"></div>
+                <div class="small-button small-button1 marl-none" :class="this.con==1 ? 'back' :''"  @click="btn1()"></div>
+                <div class="small-button small-button2" :class="this.con==2 ? 'back' :''" @click="btn2()"></div>
+                <div class="small-button small-button3" :class="this.con==3 ? 'back' :''" @click="btn3()"></div>
                 <!-- v-on:mouseenter="visible" @mouseleave="invisible" -->
             </div>
         </div>
@@ -98,27 +98,28 @@ export default {
     data(){
         return{
             con:1,
+            number:0,
         }
     },
     created(){},
     mounted(){
-        this.cassply()
+        // this.cassply()
     },
     computed:{
 
     },
     methods:{
         //计算滚动距离
-        handleScroll(e){
-            // console.log(e.target.scrollLeft)
-            if(e.target.scrollLeft == 0){
-                this.con = 1
-            }else if(e.target.scrollLeft >= 280 && e.target.scrollLeft<680){
-                this.con = 2
-            }else if(e.target.scrollLeft >= 680){
-                this.con = 3
-            }
-        },
+        // handleScroll(e){
+        //     // console.log(e.target.scrollLeft)
+        //     if(e.target.scrollLeft == 0){
+        //         this.con = 1
+        //     }else if(e.target.scrollLeft >= 280 && e.target.scrollLeft<680){
+        //         this.con = 2
+        //     }else if(e.target.scrollLeft >= 680){
+        //         this.con = 3
+        //     }
+        // },
         //鼠标滚动
         cassply(){
             var outDiv = document.getElementById("ul");
@@ -136,6 +137,18 @@ export default {
             }  
         }
         },
+        btn1(){
+            this.number = 0+'px'
+            this.con=1
+        },
+        btn2(){
+            this.number = -542+'px'
+            this.con=2
+        },
+        btn3(){
+            this.number = -820+'px'
+            this.con=3
+        }
         //点击控制
         // scroll1(){
         //     var offleft = document.getElementById("ul");

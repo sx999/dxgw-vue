@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1639363938067') format('truetype');
+  src: url('iconfont.ttf?t=1639376639164') format('truetype');
 }
 
 .iconfont {
@@ -41,6 +41,10 @@
 
 .icon-dianhua4:before {
   content: "\e76e";
+}
+
+.icon-guanliyuan_jiaoseguanli:before {
+  content: "\e612";
 }
 
 .icon-youjian:before {
@@ -112,7 +116,7 @@
 }
 
 .icon-weibiaoti-4:before {
-  content: "\e612";
+  content: "\e613";
 }
 
 .icon-xingming:before {

@@ -62,6 +62,13 @@
       "unicode_decimal": 59246
     },
     {
+      "icon_id": "3161597",
+      "name": "管理员_角色管理",
+      "font_class": "guanliyuan_jiaoseguanli",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
       "icon_id": "4198413",
       "name": "邮件",
       "font_class": "youjian",
@@ -184,8 +191,8 @@
       "icon_id": "18858933",
       "name": "供应链",
       "font_class": "weibiaoti-4",
-      "unicode": "e612",
-      "unicode_decimal": 58898
+      "unicode": "e613",
+      "unicode_decimal": 58899
     },
     {
       "icon_id": "19457209",
