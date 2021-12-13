@@ -104,6 +104,7 @@
     flex-direction: column;
     align-content: space-between;
     cursor: pointer;
+    position: relative;
 }
 .Industry-box .center .list .list-data .right .p1{
     margin-top: 25px;
@@ -121,20 +122,23 @@
     margin-top: 34px;
     margin-left: 32px;
     padding-right: 60px;
-    height: 87px;
+    /* height: 110px; */
     line-height: 26px;
     font-size: 16px;
     font-weight: 500;
     color: #555555;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; 
+    -webkit-line-clamp: 2; 
     overflow: hidden;
 }
 .Industry-box .center .list .list-data .right .div4{
+    position: absolute;
+    left:30px;
+    bottom: 0;
     width: 90%;
     margin: auto;
-    margin-top:54px;
+    /* margin-top:54px; */
     height: 58px;
     border-top: 1px solid #f3f3f3;
 }

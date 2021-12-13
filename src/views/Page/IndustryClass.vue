@@ -46,6 +46,7 @@
         </div>
 </template>
 <script>
+import {mapState } from "vuex";
 export default {
     data(){
         return{
@@ -59,9 +60,9 @@ export default {
             time:"",
         }
     },
-    created(){},
+    created(){ this.Queryall()},
     mounted(){
-        this.Queryall()
+       
          // 绑定监听事件
 		window.addEventListener("keydown", this.keyDown);
     },
@@ -89,22 +90,24 @@ export default {
                     data = this.listData
                     return data;
                 }
-
         },
+       
     },
     methods:{
         // 查询全部
         Queryall(){
-            this.axios.post(this.$api_router.industry+'findAll')
-            .then(res=>{
-              //  console.log(res)
-                if(res.data.code == 200){
-                        this.listData = res.data.data
-                        this.Dateformatting()
-                }else{
-                    return false
-                }
-            })     
+            this.listData  =  JSON.parse(this.$store.state.demoList)
+            // this.listData = sessionStorage.getItem("data");   
+            this.Dateformatting()
+            // this.axios.post(this.$api_router.industry+'findAll')
+            // .then(res=>{
+            //     if(res.data.code == 200){
+            //             this.listData = res.data.data
+            //             this.Dateformatting()
+            //     }else{
+            //         return false
+            //     }
+            // })     
         },
         // 搜索
         Search(){

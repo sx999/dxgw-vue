@@ -41,11 +41,13 @@
 export default {
     data(){
         return{
-            ListData:[]
+            ListData:[],
+            ListData1:[]
         }
     },
     created(){},
     mounted(){
+        this.Queryall1()
         this.Queryall()
     },
     computed:{
@@ -59,17 +61,26 @@ export default {
     methods:{
           // 查询全部
         Queryall(){
-            this.axios.post(this.$api_router.industry+'findAll')
-            .then(res=>{
-               // console.log("资讯",res)
-                if(res.data.code == 200){
-                        this.ListData = res.data.data
-                        this.Dateformatting()  
-                }else{
-                    this.$Message.warning(res.data.msg);
-                    return false
-                }
-            })     
+            if(this.$store.state.demoList != "" || this.$store.state.demoList.length<=this.ListData1.length){
+                this.ListData  =  JSON.parse(this.$store.state.demoList)
+                this.Dateformatting()  
+            }else{
+               
+            }  
+        },
+        Queryall1(){
+             this.axios.post(this.$api_router.industry+'findAll')
+                .then(res=>{
+                // console.log("资讯",res)
+                    if(res.data.code == 200){
+                            this.ListData = res.data.data
+                            this.ListData1 = res.data.data
+                            this.$store.commit('setDemoList',JSON.stringify(this.ListData));
+                            this.Dateformatting()  
+                    }else{
+                        return false
+                    }
+                })
         },
         //跳转详情
         Godetail(id){

@@ -22,6 +22,9 @@ export default {
 }
 </script>
 <style scoped>
+   .Contact-box{
+       height: 978px;
+   }
    .Contact-box img{
        width: 100%;
        height: 100%;
