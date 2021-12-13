@@ -18,7 +18,7 @@
                 </div>
                 <p class="p1">物联网数字化班级管理</p>
                 <p class="p2 themecolors">提供硬件到软件一体化应用，支持多个场景</p>
-                <div class="button">
+                <div class="button" @click="topage()">
                     查看详情
                 </div>
             </div>
@@ -54,6 +54,9 @@ export default {
                 }
             })     
         },
+        topage(){
+            this.$router.push({path:'/about'})
+        }
     }
 }
 </script>
@@ -62,7 +65,6 @@ export default {
         width: 100%;
         height: 100%;
         position: relative;
-
     }
     .banner-img img{
         /* position: relative; */

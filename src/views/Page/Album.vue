@@ -12,9 +12,6 @@
                 :preview-src-list="srcList"
             >
             </el-image>
-             <div class="mag0">
-            <a :href="href" target="_Blank">点击查看PDF文件</a>
-        </div>
         </div>
     </div>
 </template>
@@ -23,7 +20,6 @@ import Nomatch from '../../components/Nomatch.vue'
 export default {
     data(){
         return{
-            href:"https://dxkj2021-1306445192.cos.ap-nanjing.myqcloud.com/duxiu/94711639124420538.pdf",
             url: '',        //当前图片
             srcList: [],   //预览图片组
             listdata:[],
@@ -61,19 +57,6 @@ export default {
 }
 </script>
 <style>
-    .Album-box .mag0{
-        margin: 0 auto;
-        margin-top: 10px;
-        width: 1024px;
-        height: 50px;
-        line-height: 50px;
-    }
-    .Album-box .mag0 a{
-       /* margin-left: 200px; */
-       font-size: 25px;
-       color: #409EFF;
-       text-shadow:1px 0px 0px #409EFF;
-    }
     .demo-image__lazy{
         margin: 50px 0;
         text-align: center;

@@ -20,6 +20,13 @@
       "unicode_decimal": 58989
     },
     {
+      "icon_id": "1788675",
+      "name": "管理员",
+      "font_class": "guanliyuan",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
       "icon_id": "2076254",
       "name": "电话",
       "font_class": "dianhua",

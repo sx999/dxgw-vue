@@ -9,19 +9,18 @@
                         <p></p>
                         <p>解决方案</p>
                         <p></p>
-                        <p>解决方案</p>
+                        <p>联系我们</p>
                         <p></p>
                     </div>
                     <div class="bottom-l-b">
                         <ul>
-                            <li><router-link to="/"> 全部资讯</router-link></li>
-                            <li><router-link to="/">全部资讯</router-link></li>
+                            <li><router-link to="/industry/industryclass">全部资讯</router-link></li>
                         </ul>
                         <ul>
-                            <li><router-link to="/">门禁系统</router-link></li>
-                            <li><router-link to="/">智能校服</router-link></li>
-                            <li><router-link to="/">智慧教室</router-link></li>
-                            <li><router-link to="/">录播教室</router-link></li>
+                            <li><router-link to="/solution/solutionpage2">门禁系统</router-link></li>
+                            <li><router-link to="/solution/solutionpage1">宿管系统</router-link></li>
+                            <li><router-link to="/solution/solutionpage3">智慧教室</router-link></li>
+                            <li><router-link to="/solution/solutionpage4">录播教室</router-link></li>
                         </ul>
                         <ul>
                             <li class="orange pitch">联系电话：{{this.listdata.sysPhone}}</li>

@@ -35,8 +35,8 @@
                     </li>
                     <li class="">
                         <div class="div1 flex">
-                            <span class="iconfont icon-clothes"></span>
-                            <p class="p1">智能校服</p>
+                            <span class="iconfont icon-guanliyuan"></span>
+                            <p class="p1">宿管系统</p>
                         </div>
                         <div class="block flex flex-aic" @click="$router.push({path:'/solution/solutionpage1'})">
                             <p>查看更多</p>

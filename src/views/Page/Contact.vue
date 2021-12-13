@@ -15,7 +15,7 @@ export default {
     },
     components:{Nomatch},
     created(){},
-    mounted(){this.Queryall()},
+    mounted(){},
     methods:{
         
     }
@@ -24,6 +24,6 @@ export default {
 <style scoped>
    .Contact-box img{
        width: 100%;
-       /* height: 100%; */
+       height: 100%;
    }
 </style>
