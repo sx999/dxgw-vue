@@ -13,6 +13,27 @@
       "unicode_decimal": 59245
     },
     {
+      "icon_id": "634046",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "654165",
+      "name": "电话",
+      "font_class": "dianhua1",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "1422573",
+      "name": "电话",
+      "font_class": "dianhua2",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
       "icon_id": "1470964",
       "name": "灯",
       "font_class": "deng",
@@ -29,9 +50,16 @@
     {
       "icon_id": "2076254",
       "name": "电话",
-      "font_class": "dianhua",
+      "font_class": "dianhua3",
       "unicode": "e88b",
       "unicode_decimal": 59531
+    },
+    {
+      "icon_id": "3091965",
+      "name": "电话",
+      "font_class": "dianhua4",
+      "unicode": "e76e",
+      "unicode_decimal": 59246
     },
     {
       "icon_id": "4198413",
@@ -139,6 +167,13 @@
       "unicode_decimal": 58934
     },
     {
+      "icon_id": "17777886",
+      "name": "电话",
+      "font_class": "dianhua5",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
       "icon_id": "18166528",
       "name": "衣服,服装",
       "font_class": "clothes",
@@ -163,8 +198,8 @@
       "icon_id": "21432644",
       "name": "农民合作社",
       "font_class": "men",
-      "unicode": "e605",
-      "unicode_decimal": 58885
+      "unicode": "e606",
+      "unicode_decimal": 58886
     },
     {
       "icon_id": "23165000",

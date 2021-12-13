@@ -31,16 +31,17 @@
                     <p  class="text-z">团队成员多为90,00后，青春洋溢、活力四射。</p>
                     <p class="text-z">团队意识与强烈的事业心是公司力量不竭的源泉。你会发现个人的聪明才智只有融入团队才会获得更好的发挥、才能取得更大的成就。
                         以公司共同目标和整体形象为前提，公司提倡个性发挥，为职员提供广阔的发展空间。</p>
-                    <p>企业文化：</p>    
-                    <p>服务理念：服务创造美好印象</p>  
-                    <p>经营理念：诚信、合作共赢、发展</p>
-                    <p>团队精神：创新、协作、勤学、超越</p>
-                    <p>员工精神：忠诚、协作、专业、进取</p>
-                    <p>执行理念：不找不行的理由，只找能行的方法</p>
-                    <p>用人理念：能者上 庸者下 闲者弃</p>
-                    <p>沟通理念：倾心聆听，用心回应</p>
-                    <p>成功理念：脚踏实地实现每一阶段的自我目标</p>
-                    <p>态度理念：认真做事只把事情做对，用心做事才能把事情做好</p>
+                    <p>企业文化：</p>
+                    <p>企业愿景：诚让学校成为更阳光、更安全的地方</p>    
+                    <p>工作原则：不为失败找理由、只为成功找方法</p>  
+                    <p>企业使命：科技引领教育变革</p>
+                    <p>工作口号：团结拼搏，永争第一，我能、横刀立马，勇创新高，我行</p>
+                    <p>团队理念：没有完美的个人,只有完美的团队</p>
+                    <p>工作精神：</p>
+                    <p class="text-z">亮剑精神：狭路相逢勇者胜</p>
+                    <p class="text-z">大海精神：积累、宽容、无私</p>
+                    <p class="text-z">大雁精神：不达目的誓不罢休</p>
+                    <p class="text-z">螃蟹精神：创新、张扬、好奇</p>
                 </div>
                 <img class="img" :src="item.firmPic" alt="">
             </div>
@@ -115,8 +116,8 @@
                 </div>
             </div>
             <div class="black">
-                 <ul class="data flex flex-jcsb">
-                    <li v-for="(item,index) in listData3" :key="index" class="flex">
+                 <ul class="data" id="ul">
+                    <li v-for="(item,index) in listData3" :key="index" class="flex flex-aic">
                         <div>
                             <img :src="item.mergePic" alt="">
                         </div>
@@ -147,7 +148,7 @@ export default {
         }
     },
     created(){},
-    mounted(){this.Queryall(),this.Queryall2(),this.Queryall3()},
+    mounted(){this.Queryall(),this.Queryall2(),this.Queryall3(),this.cassply()},
     computed:{
         listdata1:function(){
             return this.listData.splice(0,1)
@@ -193,6 +194,23 @@ export default {
                     return false
                 }
             })     
+        },
+         //鼠标滚动
+        cassply(){
+            var outDiv = document.getElementById("ul");
+            outDiv.onwheel = function(event){  
+            //禁止事件默认行为（此处禁止鼠标滚轮行为关联到"屏幕滚动条上下移动"行为）  
+            event.preventDefault();  
+            //设置鼠标滚轮滚动时屏幕滚动条的移动步长  
+            var step = 270;  
+            if(event.deltaY < 0){  
+                //向上滚动鼠标滚轮，屏幕滚动条左移  
+                this.scrollLeft -= step;  
+            } else {  
+                //向下滚动鼠标滚轮，屏幕滚动条右移  
+                this.scrollLeft += step;  
+            }  
+        }
         },
         
     }

@@ -14,12 +14,12 @@
         <div class="Module6">
             <div class="div2">
                 <div class="front">
-                    <div class="ico-img"><span class="iconfont icon-dianhua"></span></div>
+                    <div class="ico-img"><span class="iconfont icon-dianhua2"></span></div>
                     <div>联系电话</div>
                     <div>{{this.listdata.sysPhone}}</div>
                 </div>
                 <div class="back front" style="background-color:#FFF">
-                    <div class="ico-img"><span class="iconfont icon-dianhua"></span></div>
+                    <div class="ico-img"><span class="iconfont icon-dianhua2"></span></div>
                     <div>联系电话</div>
                     <div>{{this.listdata.sysPhone}}</div>
                 </div>

@@ -8,7 +8,7 @@
                 <img class="m-title-img rotate" src="../assets/images/group.png" alt="">
             </div>
             <div class="m-title flex flex-aic">
-                <span>AFeatures</span> 
+                <span>Product advantages</span> 
             </div>
         </div>
         <div class="Module5">

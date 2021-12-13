@@ -33,7 +33,10 @@
     background: rgba(80, 142, 252, 0.04);
 }
 .Agency-box .center1{
-    margin-bottom: 40px;
+    margin-top: 0;
+    padding-top: 80px;
+    /* margin-bottom: 40px; */
+    padding-bottom: 40px;
 }
 .Agency-box .center1 .list{
     justify-content: space-between;
@@ -50,7 +53,7 @@
     font-family: PingFang SC-Bold, PingFang SC;
     font-weight: bold;
      color: #333333;
-    background: rgba(235, 242, 255, 0.6);
+    background: rgba(235, 242, 255, 0.9);
     border-radius: 4px 4px 4px 4px;
     transition: all .9s;
     cursor: default;
@@ -93,7 +96,7 @@
     width: 490px;
     height: 52px;
     align-items: center;
-    background: rgba(237, 243, 252, 0.4);
+    background: rgba(237, 243, 252, 0.9);
     border-radius: 2px 2px 2px 2px;
 }
 .Agency-box .center2 .form .input1 .span{

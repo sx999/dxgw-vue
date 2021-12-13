@@ -137,55 +137,55 @@ export default {
         }
         },
         //点击控制
-        scroll1(){
-            var offleft = document.getElementById("ul");
-            var offlefta = offleft.scrollLeft 
-            if(offlefta >0){
-                var timer=setInterval(function(){
-                if(offlefta==0){
-                    clearInterval(timer)
-                }else{
-                    offlefta =  offlefta-40
-                    offleft.scrollTo(offlefta,0);
-                }
-                },50);
-            }
-        },
-        scroll2(){
-            var offleft = document.getElementById("ul");
-            var offlefta = offleft.scrollLeft 
-            if(offlefta <280){
-                var timer=setInterval(function(){
-                if(offlefta==280){
-                    clearInterval(timer)
-                }else{
-                    offlefta =  offlefta+40
-                    offleft.scrollTo(offlefta,0);
-                }
-                },50);
-            }else{
-                var timer=setInterval(function(){
-                if(offlefta==280){
-                    clearInterval(timer)
-                }else{
-                    offlefta =  offlefta-40
-                    offleft.scrollTo(offlefta,0);
-                }
-                },50);
-            }
-        }, 
-        scroll3(){
-            var offleft = document.getElementById("ul");
-            var offlefta = offleft.scrollLeft 
-            var timer=setInterval(function(){
-                if(offlefta==800){
-                    clearInterval(timer)
-                }else{
-                    offlefta =  offlefta+40
-                    offleft.scrollTo(offlefta,0);
-                }
-            },50);
-        },
+        // scroll1(){
+        //     var offleft = document.getElementById("ul");
+        //     var offlefta = offleft.scrollLeft 
+        //     if(offlefta >0){
+        //         var timer=setInterval(function(){
+        //         if(offlefta==0){
+        //             clearInterval(timer)
+        //         }else{
+        //             offlefta =  offlefta-40
+        //             offleft.scrollTo(offlefta,0);
+        //         }
+        //         },50);
+        //     }
+        // },
+        // scroll2(){
+        //     var offleft = document.getElementById("ul");
+        //     var offlefta = offleft.scrollLeft 
+        //     if(offlefta <280){
+        //         var timer=setInterval(function(){
+        //         if(offlefta==280){
+        //             clearInterval(timer)
+        //         }else{
+        //             offlefta =  offlefta+40
+        //             offleft.scrollTo(offlefta,0);
+        //         }
+        //         },50);
+        //     }else{
+        //         var timer=setInterval(function(){
+        //         if(offlefta==280){
+        //             clearInterval(timer)
+        //         }else{
+        //             offlefta =  offlefta-40
+        //             offleft.scrollTo(offlefta,0);
+        //         }
+        //         },50);
+        //     }
+        // }, 
+        // scroll3(){
+        //     var offleft = document.getElementById("ul");
+        //     var offlefta = offleft.scrollLeft 
+        //     var timer=setInterval(function(){
+        //         if(offlefta==800){
+        //             clearInterval(timer)
+        //         }else{
+        //             offlefta =  offlefta+40
+        //             offleft.scrollTo(offlefta,0);
+        //         }
+        //     },50);
+        // },
     }
 }
 </script>

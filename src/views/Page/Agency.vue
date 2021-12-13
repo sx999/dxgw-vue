@@ -43,7 +43,7 @@
                     <input type="text" v-model="information.applyName" placeholder="姓名 (必填)" @blur="nameblur()">
                 </div>
                 <div class="input1 flex">
-                    <span class="iconfont icon-dianhua span"></span>
+                    <span class="iconfont icon-dianhua2 span"></span>
                     <input type="text" v-model="information.applyPhone" placeholder="联系方式 (必填)" @blur="phoneblur()">
                 </div>
                 <div class="input1 flex">

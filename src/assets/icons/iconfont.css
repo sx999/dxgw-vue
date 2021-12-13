@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1639126975391') format('truetype');
+  src: url('iconfont.ttf?t=1639363938067') format('truetype');
 }
 
 .iconfont {
@@ -15,6 +15,18 @@
   content: "\e76d";
 }
 
+.icon-dianhua:before {
+  content: "\e66f";
+}
+
+.icon-dianhua1:before {
+  content: "\e61c";
+}
+
+.icon-dianhua2:before {
+  content: "\e652";
+}
+
 .icon-deng:before {
   content: "\e66d";
 }
@@ -23,8 +35,12 @@
   content: "\e696";
 }
 
-.icon-dianhua:before {
+.icon-dianhua3:before {
   content: "\e88b";
+}
+
+.icon-dianhua4:before {
+  content: "\e76e";
 }
 
 .icon-youjian:before {
@@ -87,6 +103,10 @@
   content: "\e636";
 }
 
+.icon-dianhua5:before {
+  content: "\e605";
+}
+
 .icon-clothes:before {
   content: "\e8c7";
 }
@@ -100,7 +120,7 @@
 }
 
 .icon-men:before {
-  content: "\e605";
+  content: "\e606";
 }
 
 .icon-banjishangke:before {
