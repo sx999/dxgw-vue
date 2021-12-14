@@ -26,7 +26,7 @@
                         <img :src="item.newsImagePath" alt="">
                     </div>
                     <div class="right flex">
-                        <p class="p1">{{index+1}}</p>
+                        <!-- <p class="p1">{{index+1}}</p> -->
                         <p class="p2">{{item.newsTitle}}</p>
                         <!-- <p class="p3" v-html="item.newsContent"></p> -->
                         <p class="p3">{{item.newsDesc}}</p>

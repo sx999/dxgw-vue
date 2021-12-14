@@ -129,7 +129,7 @@
     color: #555555;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2; 
+    -webkit-line-clamp: 3; 
     overflow: hidden;
 }
 .Industry-box .center .list .list-data .right .div4{
