@@ -27,7 +27,7 @@
                     <div class="list-text">
                         <p class="p1">{{item.newsTitle}}</p>
                         <!-- <p class="p2 hover-color" v-html="item.newsContent"> </p> -->
-                        <p class="p2 hover-color">{{item.newsDesc}}</p>
+                        <!-- <p class="p2 hover-color">{{item.newsDesc}}</p> -->
                         <div class="look flex flex-jcsb flex-aic">
                             <p>{{item.newsDate}}</p>
                             <p>查看全文<span class="iconfont icon-youjiantou"></span></p>

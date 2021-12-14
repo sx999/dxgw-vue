@@ -24,7 +24,7 @@
     background: rgba(0, 0, 0, 0.3);
     transition: all 0.5s;
     cursor:pointer;
-    opacity: 0;
+    opacity: 1;
 }
 .Module1-left .block p:nth-child(1){
    margin-left: 20px;
@@ -35,10 +35,11 @@
     overflow: hidden;
 }
 .Module1-left .block p:nth-child(2){
-   width: 200px;
+   width: 150px;
    font-weight: 500; 
    font-size: 14px;
-   margin-right: 20px;
+   /* margin-left: 40px; */
+   /* margin-right: 20px; */
 }
 .Module1-left .block p span{
     margin-left: 10px;
@@ -75,17 +76,24 @@
     height: 100%;
 }
 .Module1-right .list .list-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 332px;
     font-weight: 500;
     color: #777777;
 }
 .Module1-right .list .list-text .p1{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; 
+    overflow: hidden;
     /* width: 332px; */
     margin-top: 16px;
     font-size: 20px;
-    overflow: hidden;
+    /* overflow: hidden;
     text-overflow:ellipsis;
-    white-space: nowrap;
+    white-space: nowrap; */
     color: #333;
     font-weight: bold;
 }
@@ -98,7 +106,7 @@
     overflow: hidden;
 }
 .Module1-right .list .list-text .look{
-    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .Module1-right .list .list-text .look p:nth-child(1){
     font-size: 14px;
