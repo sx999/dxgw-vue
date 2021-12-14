@@ -32,7 +32,7 @@
                     <p class="text-z">团队意识与强烈的事业心是公司力量不竭的源泉。你会发现个人的聪明才智只有融入团队才会获得更好的发挥、才能取得更大的成就。
                         以公司共同目标和整体形象为前提，公司提倡个性发挥，为职员提供广阔的发展空间。</p>
                     <p>企业文化：</p>
-                    <p>企业愿景：诚让学校成为更阳光、更安全的地方</p>    
+                    <p>企业愿景：让学校成为更阳光、更安全的地方</p>    
                     <p>工作原则：不为失败找理由、只为成功找方法</p>  
                     <p>企业使命：科技引领教育变革</p>
                     <p>工作口号：团结拼搏，永争第一，我能、横刀立马，勇创新高，我行</p>
@@ -116,8 +116,10 @@
                 </div>
             </div>
             <div class="black">
+                <div class="left" @click="leftlook()"><span class="iconfont icon-xiangzuo1"></span></div>
+                <div class="right" @click="rightlook()"><span class="iconfont icon-xiangyou1"></span></div>
                  <ul class="data" id="ul">
-                    <li v-for="(item,index) in listData3" :key="index" class="flex flex-aic">
+                    <li v-for="(item,index) in listData3" :key="index" class="flex flex-aic" :style="{transform:'translateX('+number+')'}">
                         <div>
                             <img :src="item.mergePic" alt="">
                         </div>
@@ -144,11 +146,12 @@ export default {
                 {src:"https://dxkj2021-1306445192.cos.ap-nanjing.myqcloud.com/duxiu/77381638773391385.png"},
             ],
             listData2:[],
-            listData3:[]
+            listData3:[],
+            number:0
         }
     },
     created(){},
-    mounted(){this.Queryall(),this.Queryall2(),this.Queryall3(),this.cassply()},
+    mounted(){this.Queryall(),this.Queryall2(),this.Queryall3()},
     computed:{
         listdata1:function(){
             return this.listData.splice(0,1)
@@ -212,7 +215,14 @@ export default {
             }  
         }
         },
-        
+        leftlook(){
+            this.number = this.number = 0+'px'
+            console.log(this.number)
+        },
+        rightlook(){
+            this.number = this.number = -600+'px'
+            console.log(this.number)
+        }
     }
 }
 </script>

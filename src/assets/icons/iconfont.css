@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1639376639164') format('truetype');
+  src: url('iconfont.ttf?t=1639444681960') format('truetype');
 }
 
 .iconfont {
@@ -13,6 +13,14 @@
 
 .icon-xiangshang1:before {
   content: "\e76d";
+}
+
+.icon-xiangyou1:before {
+  content: "\e775";
+}
+
+.icon-xiangzuo1:before {
+  content: "\e779";
 }
 
 .icon-dianhua:before {

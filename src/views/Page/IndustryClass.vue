@@ -27,8 +27,9 @@
                     </div>
                     <div class="right flex">
                         <p class="p1">{{index+1}}</p>
-                        <p class="p2">{{item.newsDesc}}</p>
-                        <p class="p3" v-html="item.newsContent"></p>
+                        <p class="p2">{{item.newsTitle}}</p>
+                        <!-- <p class="p3" v-html="item.newsContent"></p> -->
+                        <p class="p3">{{item.newsDesc}}</p>
                         <div class="div4 flex flex-jcsb flex-aic">
                             <p>{{item.newsDate}}</p>
                             <span class="iconfont icon-youjiantou span"></span>
@@ -96,18 +97,18 @@ export default {
     methods:{
         // 查询全部
         Queryall(){
-            this.listData  =  JSON.parse(this.$store.state.demoList)
+            // this.listData  =  this.$store.state.demoList
             // this.listData = sessionStorage.getItem("data");   
-            this.Dateformatting()
-            // this.axios.post(this.$api_router.industry+'findAll')
-            // .then(res=>{
-            //     if(res.data.code == 200){
-            //             this.listData = res.data.data
-            //             this.Dateformatting()
-            //     }else{
-            //         return false
-            //     }
-            // })     
+            // this.Dateformatting()
+            this.axios.post(this.$api_router.industry+'findAll')
+            .then(res=>{
+                if(res.data.code == 200){
+                        this.listData = res.data.data
+                        this.Dateformatting()
+                }else{
+                    return false
+                }
+            })     
         },
         // 搜索
         Search(){
