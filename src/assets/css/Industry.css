@@ -48,7 +48,7 @@
 }
 .data-header-r img{
     position: absolute;
-    z-index: 99;
+    z-index: 6;
     top: 10px;
     left: 0;
     width: 23px;

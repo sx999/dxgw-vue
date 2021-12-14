@@ -60,9 +60,25 @@
     margin-top: 30px;
     margin-bottom: 60px;
     width: 100%;
-    text-indent: 40px;
+    /* text-indent: 40px; */
     font-size: 20px;
     font-family: PingFang SC-Medium, PingFang SC;
     font-weight: 500;
     color: #5B5B5B;
 }
+.IndustryDetail-box .detail .text p{
+    
+    margin:0 0 10px 0;
+}
+.IndustryDetail-box .detail .text p .ql-align-right{
+    text-align: right;
+}
+.IndustryDetail-box .detail .text p .ql-align-center{
+    text-align: center;
+}
+.IndustryDetail-box .detail .text p .ql-align-left{
+    text-align:left;
+}
+/* .IndustryDetail-box .detail .text p img{
+    width: 100%;
+} */
