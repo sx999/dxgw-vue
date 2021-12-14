@@ -161,10 +161,11 @@ export default {
     }
     .el-menu-item{
         font-size: 16px !important;
-        font-weight: 500;
+        font-weight: 500 !important;
     }
     .el-menu--horizontal>.el-submenu .el-submenu__title{
         font-size: 16px !important;
+        font-weight: 500 !important;
     }
      /* element-nav css修改 start*/
     .el-menu.el-menu--horizontal{
