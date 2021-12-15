@@ -10,7 +10,7 @@
         </div>
         <div class="detail">
             <div class="title">
-                <p class="p1">{{list.newsDesc}}</p>
+                <p class="p1">{{list.newsTitle}}</p>
                 <p class="p2">时间：{{list.newsDate}}</p>
             </div>
             <div class="text">
